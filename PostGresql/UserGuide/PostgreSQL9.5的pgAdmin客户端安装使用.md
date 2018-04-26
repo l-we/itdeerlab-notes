@@ -6,7 +6,9 @@
 
 > pgAdmin当前最新版本是pgAdmin 4 V3.0版本[下载页面](https://www.pgadmin.org/download/pgadmin-4-windows/)
 
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.27-1.png)
 
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.27-2.png)
 
 ### 软件安装
 
