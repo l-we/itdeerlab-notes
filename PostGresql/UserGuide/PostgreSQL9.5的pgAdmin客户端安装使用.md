@@ -6,6 +6,8 @@
 
 > pgAdmin当前最新版本是pgAdmin 4 V3.0版本[下载页面](https://www.pgadmin.org/download/pgadmin-4-windows/)
 
+
+
 ### 软件安装
 
 [1] 环境为Window10操作系统

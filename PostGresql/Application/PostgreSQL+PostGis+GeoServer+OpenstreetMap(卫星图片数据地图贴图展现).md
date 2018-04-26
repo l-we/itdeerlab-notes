@@ -22,6 +22,8 @@
 
  2. 简单配置PosgreSQL，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
 
- 3. 在Window上安装一个客户端，详见[PostgreSQL9.5的pgAdmin客户端安装使用](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
+ 3. 在Window上安装一个客户端，详见[PostgreSQL9.5的pgAdmin客户端安装使用](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostgreSQL9.5%E7%9A%84pgAdmin%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.md)
 
- 4. 安装PostGis，详见[Centos7.2安装部署PostGis2.4.4](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
+ 4. 安装PostGis，详见[Centos7.2安装部署PostGis2.4.4](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2PostGis2.4.4.md)
+
+ 5. 部署osm2pgsql，详见[Centos7.2安装部署PostGis2.4.4]()
