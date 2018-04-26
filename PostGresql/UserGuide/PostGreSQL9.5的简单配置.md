@@ -1,7 +1,6 @@
 ### 前提环境
 
-> 使用上节中已经安装好的PostgreSQL服务，详见[Centos7.2安装PostGreSQL9.5](http://note.youdao.com/)
-
+> 使用上节中已经安装好的PostgreSQL服务，详见[Centos7.2安装PostGreSQL9.5](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E5%AE%89%E8%A3%85PostGreSQL9.5.md)
 
 ### PostgreSQL9.5的简单使用
 
@@ -10,6 +9,7 @@
 ```
 postgres=# CREATE DATABASE demo;
 CREATE DATABASE
+
 postgres=# \l
                                   List of databases
    Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
@@ -93,3 +93,5 @@ Password for user demo: 12345678
 psql (9.5.12)
 Type "help" for help.
 ```
+
+> 以上的配置之后可以使用demo 用户登录Postgresql系统中做操作。

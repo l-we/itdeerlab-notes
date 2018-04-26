@@ -1,8 +1,8 @@
 ### 前提环境
 
-> 使用上节中已经安装好的PostgreSQL服务，详见[Centos7.2安装PostGreSQL9.5](http://note.youdao.com/)
+> 使用上节中已经安装好的PostgreSQL服务，详见[Centos7.2安装PostGreSQL9.5](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E5%AE%89%E8%A3%85PostGreSQL9.5.md)
 
-> 使用上节配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](http://note.youdao.com/)
+> 使用上节配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
 
 ### 安装软件
 
@@ -10,6 +10,7 @@
 
 ```
 [root@demo ~]# yum install epel-release -y
+
 Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
@@ -32,6 +33,7 @@ Complete!
 
 ```
 [root@demo ~]# yum install postgis2_95 postgis2_95-client -y
+
 Loaded plugins: fastestmirror
 epel/x86_64/metalink                                                                               | 7.8 kB  00:00:00     
 epel                                                                                               | 4.7 kB  00:00:00     
@@ -61,6 +63,7 @@ Complete!
 
 ```
 [root@demo ~]# yum install ogr_fdw95 -y
+
 Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
@@ -78,6 +81,7 @@ Complete!
 
 ```
 [root@demo ~]# yum install pgrouting_95 -y
+
 Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
@@ -101,13 +105,16 @@ Complete!
 
 ```
 [root@demo ~]# su postgres
+
 bash-4.2$ psql
+
 could not change directory to "/root": Permission denied
 psql (9.5.12)
 Type "help" for help.
 
 postgres=# CREATE DATABASE demogisdb OWNER demo;
 CREATE DATABASE
+
 postgres=# \l
                                   List of databases
    Name    |  Owner   | Encoding |   Collate   |    Ctype    |   Access privileges   
@@ -133,23 +140,30 @@ You are now connected to database "demogisdb" as user "postgres".
 
 demogisdb=# CREATE EXTENSION postgis;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION postgis_topology;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION ogr_fdw;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION postgis_sfcgal;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION fuzzystrmatch;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION address_standardizer;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION address_standardizer_data_us;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION postgis_tiger_geocoder;
 CREATE EXTENSION
+
 demogisdb=# CREATE EXTENSION hstore;
 CREATE EXTENSION
-
 
 demogisdb=# SELECT postgis_full_version();
                                                                                             postgis_full_version          

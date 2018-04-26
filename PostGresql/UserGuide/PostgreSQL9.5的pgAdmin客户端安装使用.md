@@ -1,6 +1,6 @@
 ### 前提环境
 
-> 使用上节中已经安装配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](http://note.youdao.com/)
+> 使用上节中已经安装配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
 
 ### 软件下载
 
