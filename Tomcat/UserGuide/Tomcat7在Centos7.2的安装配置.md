@@ -25,7 +25,9 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 
 ### 软件安装
 
-[1] JDK下载
+[1] 安装JDK 详见:[JDK在Centos7.2的安装配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/JDK/UserGuide/JDK%E5%9C%A8Centos7.2%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
+
+[2] Tomcat7下载
 
 ```
 [root@study ~]# mkdir -p /opt/install
@@ -35,7 +37,7 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 注意： 我这里是自己搭建的源服务器，JDK的包从其他地方或者官网下载即可，或者本地上传也可以
 ```
 
-[2] 解压
+[3] 解压
 
 ```
 没有unzip命令时，使用以下命令进行安装
@@ -45,7 +47,7 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 [root@study install]# rm -fr apache-tomcat-7.0.42.zip
 ```
 
-[3] 配置
+[4] 配置
 
 ```
 [root@study install]# cd tomcat7
@@ -53,7 +55,7 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 
 ```
 
-[4] 启动
+[5] 启动
 
 
 ```
