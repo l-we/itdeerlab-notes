@@ -85,7 +85,11 @@ java    10718 root   45u  IPv6  30491      0t0  TCP *:webcache (LISTEN)
 [root@study tomcat7]# systemctl disable firewalld
 [root@study tomcat7]# systemctl status firewalld
 
-浏览器地址栏中输入：http://192.168.1.200:8080
+浏览器地址栏中输入：http://IP:8080
+```
+
+```
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Tomcat/2018.04.27-3.png)
 ```
 
 > 在页面看到三条腿的猫则配置完成，这样就可以部署一些JavaWeb的应用，建立自己的站点
