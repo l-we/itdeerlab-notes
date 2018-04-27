@@ -22,35 +22,34 @@ CentOS Linux release 7.2.1511 (Core)
 
 [1] 安装JDK
 
-> 安装JDK详见:[JDK在Linux的安装配置](http://note.youdao.com/)
+> 安装JDK详见:[JDK在Centos7.2的安装配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/JDK/UserGuide/JDK%E5%9C%A8Centos7.2%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
 
 [2] 安装Tomcat
 
-> 安装Tomcat详见:[Tomcat7在Linux的安装配置](http://note.youdao.com/)
+> 安装Tomcat详见:[Tomcat7在Centos7.2的安装配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/Tomcat/UserGuide/Tomcat7%E5%9C%A8Centos7.2%E7%9A%84%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
 
 [3] 安装GeoServer
 
  - 下载
 
 ```
+[root@demo ~]# cd /opt/install/
 [root@demo install]# wget https://build.geoserver.org/geoserver/2.13.x/geoserver-2.13.x-2018-04-24-war.zip
---2018-04-26 19:40:03--  https://build.geoserver.org/geoserver/2.13.x/geoserver-2.13.x-2018-04-24-war.zip
-Resolving build.geoserver.org (build.geoserver.org)... 34.204.115.146
-Connecting to build.geoserver.org (build.geoserver.org)|34.204.115.146|:443... connected.
-HTTP request sent, awaiting response... 200 OK
+
+......
 Length: 82690104 (79M) [application/zip]
 Saving to: ‘geoserver-2.13.x-2018-04-24-war.zip’
 
 100%[======================================>] 82,690,104   966KB/s   in 18m 32s
 
 2018-04-26 19:58:37 (72.6 KB/s) - ‘geoserver-2.13.x-2018-04-24-war.zip’ saved [82690104/82690104]
-
 ```
 
  - 解压
 
 ```
 [root@demo install]# mkdir geoserver && unzip geoserver-2.13.x-2018-04-24-war.zip -d geoserver && rm -fr geoserver-2.13.x-2018-04-24-war.zip
+
 Archive:  geoserver-2.13.x-2018-04-24-war.zip
   inflating: geoserver/geoserver.war  
   inflating: geoserver/GPL.txt       
@@ -65,7 +64,9 @@ Archive:  geoserver-2.13.x-2018-04-24-war.zip
 [root@demo install]# cp geoserver/geoserver.war tomcat7/webapps/
 
 [root@demo install]# cd tomcat7/
+
 [root@demo tomcat7]# ./bin/shutdown.sh
+
 [root@demo tomcat7]# ./bin/startup.sh
 ```
 
