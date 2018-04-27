@@ -28,4 +28,8 @@
 
  5. 部署osm2pgsql，导入地图原图,详见[Centos7.2部署osm2pgsql-0.94.0](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2osm2pgsql-0.94.0.md)
 
- 6. 安装部署GeoServer，详见[Centos7.2部署GeoServer2.13.x]()
+ 6. 安装部署GeoServer，详见[Centos7.2部署GeoServer2.13.x](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2GeoServer2.13.x.md)
+
+ 7. 简单配置GeoServer2.13, 详见[GeoServer2.13的简单配置]()
+
+ 8. 导入图层数据, 详见[GeoServer2.13数据图层导入]()

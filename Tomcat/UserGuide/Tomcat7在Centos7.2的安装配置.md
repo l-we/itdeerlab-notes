@@ -1,6 +1,6 @@
 ### 简要说明
 
-> JDK在Linux下的安装配置（jdk7 or jdk8）前提:已经有一台Linux操作系统，切使用root用户登录,有wget和vim命令
+> Tomcat在Linux下的安装配置 前提:已经有一台Linux操作系统，切使用root用户登录,有wget和vim命令
     
 ### 环境准备
 
@@ -88,8 +88,6 @@ java    10718 root   45u  IPv6  30491      0t0  TCP *:webcache (LISTEN)
 浏览器地址栏中输入：http://IP:8080
 ```
 
-```
 ![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Tomcat/2018.04.27-3.png)
-```
 
 > 在页面看到三条腿的猫则配置完成，这样就可以部署一些JavaWeb的应用，建立自己的站点
