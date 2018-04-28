@@ -6,6 +6,8 @@
 
 > 使用安装了PostGis的机器，详见[Centos7.2安装部署PostGis2.4.4](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2PostGis2.4.4.md)
 
+> 本节紧接上一节之后进行操作
+
 ### 安装软件
 
 [1] 安装使用软件
@@ -57,89 +59,7 @@ Complete!
  1. 下载源码
 
 ```
-[root@demo ~]# wget https://github.com/openstreetmap/osm2pgsql/archive/0.94.0.tar.gz
-
-......
-Saving to: ‘0.94.0.tar.gz’
-
-100%[==================================================================================>] 1,203,310    144KB/s   in 9.8s   
-
-2018-04-26 17:21:12 (120 KB/s) - ‘0.94.0.tar.gz’ saved [1203310/1203310]
-```
-
- 2. 解压
-
-```
-[root@demo ~]# tar -zxf 0.94.0.tar.gz
-```
-
-3. 安装编译依赖
-
-```
-[root@demo ~]# yum install make cmake gcc-c++ boost-devel expat-devel zlib-devel bzip2-devel postgresql-devel postgresql95-devel geos-devel proj-devel proj-epsg lua-devel -y
-
-Loaded plugins: fastestmirror
-Loading mirror speeds from cached hostfile
-......
-Installed:
-  boost-devel.x86_64 0:1.53.0-27.el7      bzip2-devel.x86_64 0:1.0.6-13.el7            cmake.x86_64 0:2.8.12.2-2.el7      
-  expat-devel.x86_64 0:2.1.0-10.el7_3     gcc-c++.x86_64 0:4.8.5-16.el7_4.2            geos-devel.x86_64 0:3.4.2-2.el7    
-  lua-devel.x86_64 0:5.1.4-15.el7         postgresql-devel.x86_64 0:9.2.23-3.el7_4     proj-devel.x86_64 0:4.8.0-4.el7    
-  proj-epsg.x86_64 0:4.8.0-4.el7          zlib-devel.x86_64 0:1.2.7-17.el7                  
-......
-Complete!
-```
-
- 4. 编译前检查
-
- ```
-[root@demo ~]# cd osm2pgsql-0.94.0/
-
-[root@demo osm2pgsql-0.94.0]# mkdir build && cd build
-
-[root@demo build]# cmake ..
-
--- Building osm2pgsql 0.94.0
-......
--- Configuring done
--- Generating done
--- Build files have been written to: /root/osm2pgsql-0.94.0/build
-
-```
-
- 5. 编译
-
- ```
-[root@demo build]# make && make install
-
-Scanning dependencies of target osm2pgsql_lib
-[  3%] Building CXX object CMakeFiles/osm2pgsql_lib.dir/expire-tiles.cpp.o
-......
-[100%] Building CXX object CMakeFiles/osm2pgsql.dir/osm2pgsql.cpp.o
-Linking CXX executable osm2pgsql
-[100%] Built target osm2pgsql
-[ 96%] Built target osm2pgsql_lib
-[100%] Built target osm2pgsql
-Install the project...
--- Install configuration: "RelWithDebInfo"
--- Installing: /usr/local/bin/osm2pgsql
--- Removed runtime path from "/usr/local/bin/osm2pgsql"
--- Installing: /usr/local/share/man/man1/osm2pgsql.1
--- Installing: /usr/local/share/osm2pgsql/default.style
--- Installing: /usr/local/share/osm2pgsql/empty.style
-```
-
- 6. 查看
-
- ```
-[root@demo build]# osm2pgsql -version
-
-osm2pgsql version 0.94.0 (64 bit id space)
-
-Osm2pgsql failed due to ERROR: Missing zoom level for tile expiry.
-```
-
-[3] 数据导入
+[root@demo ~]# wget https://github.com/openstreetmap/osm2pgsql/[3] 数据导入
 
  1. 数据准备
 
@@ -232,4 +152,92 @@ node cache: stored: 52910936(94.92%), storage efficiency: 50.46% (dense blocks: 
 Osm2pgsql took 2346s overall
 ```
 
-> 数据导入完成
+> 数据导入完成archive/0.94.0.tar.gz
+
+......
+Saving to: ‘0.94.0.tar.gz’
+
+100%[==================================================================================>] 1,203,310    144KB/s   in 9.8s   
+
+2018-04-26 17:21:12 (120 KB/s) - ‘0.94.0.tar.gz’ saved [1203310/1203310]
+```
+
+ 2. 解压
+
+```
+[root@demo ~]# tar -zxf 0.94.0.tar.gz
+```
+
+3. 安装编译依赖
+
+```
+[root@demo ~]# yum install make cmake gcc-c++ boost-devel expat-devel zlib-devel bzip2-devel postgresql-devel postgresql95-devel geos-devel proj-devel proj-epsg lua-devel -y
+
+Loaded plugins: fastestmirror
+Loading mirror speeds from cached hostfile
+......
+Installed:
+  boost-devel.x86_64 0:1.53.0-27.el7      bzip2-devel.x86_64 0:1.0.6-13.el7            cmake.x86_64 0:2.8.12.2-2.el7      
+  expat-devel.x86_64 0:2.1.0-10.el7_3     gcc-c++.x86_64 0:4.8.5-16.el7_4.2            geos-devel.x86_64 0:3.4.2-2.el7    
+  lua-devel.x86_64 0:5.1.4-15.el7         postgresql-devel.x86_64 0:9.2.23-3.el7_4     proj-devel.x86_64 0:4.8.0-4.el7    
+  proj-epsg.x86_64 0:4.8.0-4.el7          zlib-devel.x86_64 0:1.2.7-17.el7                  
+......
+Complete!
+```
+
+> 注意点:安装postgresql95-devel 这个根据自己安装的PostgreSQL的版本进行安装
+
+```
+[root@demo ~]# yum install postgresql95-devel -y
+```
+
+ 4. 编译前检查,创建构建目录
+
+ ```
+[root@demo ~]# cd osm2pgsql-0.94.0/
+
+[root@demo osm2pgsql-0.94.0]# mkdir build && cd build
+
+[root@demo build]# cmake ..
+
+-- Building osm2pgsql 0.94.0
+......
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/osm2pgsql-0.94.0/build
+
+```
+
+ 5. 检查没有错误,就可以编译安装了
+
+ ```
+[root@demo build]# make && make install
+
+Scanning dependencies of target osm2pgsql_lib
+[  3%] Building CXX object CMakeFiles/osm2pgsql_lib.dir/expire-tiles.cpp.o
+......
+[100%] Building CXX object CMakeFiles/osm2pgsql.dir/osm2pgsql.cpp.o
+Linking CXX executable osm2pgsql
+[100%] Built target osm2pgsql
+[ 96%] Built target osm2pgsql_lib
+[100%] Built target osm2pgsql
+Install the project...
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /usr/local/bin/osm2pgsql
+-- Removed runtime path from "/usr/local/bin/osm2pgsql"
+-- Installing: /usr/local/share/man/man1/osm2pgsql.1
+-- Installing: /usr/local/share/osm2pgsql/default.style
+-- Installing: /usr/local/share/osm2pgsql/empty.style
+```
+
+ 6. 查看安装情况
+
+ ```
+[root@demo build]# osm2pgsql -version
+
+osm2pgsql version 0.94.0 (64 bit id space)
+
+Osm2pgsql failed due to ERROR: Missing zoom level for tile expiry.
+```
+
+> 输出有一个ERROR是因为缩放级别的问题,不影响使用,至此osm2pgsql安装完毕.

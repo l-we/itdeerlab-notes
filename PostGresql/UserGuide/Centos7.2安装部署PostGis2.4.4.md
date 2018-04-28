@@ -16,9 +16,7 @@ Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
  * extras: mirror.bit.edu.cn
  * updates: mirror.bit.edu.cn
-
 ......
-
 Running transaction
   Installing : epel-release-7-9.noarch                                                                                1/1 
   Verifying  : epel-release-7-9.noarch                                                                                1/1 
@@ -41,9 +39,7 @@ epel                                                                            
 (2/3): epel/x86_64/updateinfo                                                                      | 917 kB  00:00:01     
 (3/3): epel/x86_64/primary_db                                                                      | 6.3 MB  00:00:09     
 Loading mirror speeds from cached hostfile
-
 ......
-
   Verifying  : glib2-2.42.2-5.el7.x86_64                                                                            72/72 
 
 Installed:
@@ -68,9 +64,7 @@ Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
  * epel: mirrors.tongji.edu.cn
-
 ......
-
 Installed:
   ogr_fdw95.x86_64 0:1.0.4-1.rhel7                                                                                        
 
@@ -86,9 +80,7 @@ Loaded plugins: fastestmirror
 Loading mirror speeds from cached hostfile
  * base: mirrors.neusoft.edu.cn
  * epel: mirrors.tongji.edu.cn
-
 ......
-
 Installed:
   pgrouting_95.x86_64 0:2.6.0-1.rhel7                                                                                     
 
@@ -174,7 +166,11 @@ demogisdb=# SELECT postgis_full_version();
 ="GDAL 1.11.4, released 2016/01/25" LIBXML="2.9.1" LIBJSON="0.11" TOPOLOGY RASTER
 (1 row)
 
-demogisdb=# 
+demogisdb=# \q
+
+bash-4.2$ exit
+exit
+[root@demo ~]# 
 ```
 
 > 显示版本号为 POSTGIS="2.4.4 r16526" 说明PostGis安装完成。 

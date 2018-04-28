@@ -1,11 +1,11 @@
 
 ### 应用介绍
 
-> 这是一个整体的应用，笔记记录呢，不可能整体的一下全部记下来，我这里分模块记录。整体的需求是这样的。
+> 这是一个整体的应用，用笔记记录呢，不可能整体的一下全部记下来，我这里分模块记录。整体的需求是这样的。
 
 > 准备使用资源卫星（landsta8）的图片数据，实时更新数据到HDFS文件系统中，然后对图片数据进行栅格化，栅格化后的数据还保留在HDFS文件系统中，同时能导入到PostGis这样的空间数据库中，然后把OpenStreetMap的地图原图入库，通过GeoServer把栅格图和地图贴合做可视化。
 
-> 我这边把整体简单化了一下做一个整体的Demo，所以是这样的，下载OpenStreetMap的一部分数据，导入到空间数据库中，先显示出地图来。然后下载landsta8的图片数据进行栅格化，然后入库，最后把栅格化数据和地图贴合展现，最后整体过程的数据存放早HDFS文件系统。
+> 我这边把整体简单化了一下做一个整体的Demo，所以是这样的，下载OpenStreetMap的一部分数据，导入到空间数据库中，先显示出地图来。然后下载landsta8的图片数据进行栅格化，然后入库，最后把栅格化数据和地图贴合展现，最后整体过程的数据存放到HDFS文件系统。
 
 
 ### 第一步把地图原图可视化
@@ -22,14 +22,16 @@
 
  2. 简单配置PosgreSQL，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
 
- 3. 在Window上安装一个客户端，详见[PostgreSQL9.5的pgAdmin客户端安装使用](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostgreSQL9.5%E7%9A%84pgAdmin%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.md)
+ 3. 在Window上安装一个客户端，详见[PostgreSQL9.5的pgAdmin客户端安装使用](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostgreSQL9.5%E7%9A%84pgAdmin%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%AE%89%E8%A3%85%E4%BD%BF%E7%94%A8.md) 这一步可以跳过的,若不需要.
 
  4. 安装PostGis，详见[Centos7.2安装部署PostGis2.4.4](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2PostGis2.4.4.md)
 
- 5. 部署osm2pgsql，导入地图原图,详见[Centos7.2部署osm2pgsql-0.94.0](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2osm2pgsql-0.94.0.md)
+ 5. 部署osm2pgsql，详见[Centos7.2部署osm2pgsql-0.94.0](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2osm2pgsql-0.94.0.md)
 
- 6. 安装部署GeoServer，详见[Centos7.2部署GeoServer2.13.x](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2GeoServer2.13.x.md)
+ 6. 下载中国地图及海图,导入数据到PostGis, 详见[PostGis2.4.4导入中国地图数据]()
 
- 7. 简单配置GeoServer2.13, 详见[GeoServer2.13的简单配置]()
+ 7. 安装部署GeoServer，详见[Centos7.2部署GeoServer2.13.x](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2GeoServer2.13.x.md)
 
- 8. 导入图层数据, 详见[GeoServer2.13数据图层导入]()
+ 8. 简单配置GeoServer2.13, 详见[GeoServer2.13的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/GeoServer2.13%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
+
+ 9. 导入图层数据, 详见[GeoServer2.13数据图层导入](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/GeoServer2.13%E6%95%B0%E6%8D%AE%E5%9B%BE%E5%B1%82%E5%AF%BC%E5%85%A5.md)

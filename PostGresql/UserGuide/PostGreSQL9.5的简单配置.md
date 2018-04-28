@@ -4,7 +4,7 @@
 
 ### PostgreSQL9.5的简单使用
 
-[1] 创建名称为“demo”的库，并查看
+[1] 创建名称为“demo”的库，并查看(紧接上一节之后)
 
 ```
 postgres=# CREATE DATABASE demo;
@@ -39,7 +39,7 @@ GRANT
 postgres=# \q
 ```
 
-[4] 使用demo用户登录
+[4] 验证使用demo用户登录
 
 ```
 bash-4.2$ psql -U demo -h 127.0.0.1 -p 5432 -d demo -W
@@ -50,7 +50,7 @@ psql: FATAL:  Ident authentication failed for user "demo"
 
 > 登录失败，身份验证失败
 
-[5] 更改配置
+[5] 更改配置(配置在数据存储目录下,上节配置的/home/prostgresql/目录下)
 
 ```
 bash-4.2$ vim /home/postgresql_data/postgresql.conf
@@ -65,6 +65,8 @@ bash-4.2$ vim /home/postgresql_data/postgresql.conf
 改为 password_encryption = on
 ```
 
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-2.png)
+
 ```
 bash-4.2$ vim /home/postgresql_data/pg_hba.conf
 
@@ -73,6 +75,8 @@ bash-4.2$ vim /home/postgresql_data/pg_hba.conf
 
 在最下面添加 host    all             all             0.0.0.0/0                md5
 ```
+
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-3.png)
 
 [6] 重启服务
 
@@ -92,6 +96,10 @@ could not change directory to "/root": Permission denied
 Password for user demo: 12345678
 psql (9.5.12)
 Type "help" for help.
+
+demo=>\q
+
+bash-4.2$ exit
 ```
 
 > 以上的配置之后可以使用demo 用户登录Postgresql系统中做操作。

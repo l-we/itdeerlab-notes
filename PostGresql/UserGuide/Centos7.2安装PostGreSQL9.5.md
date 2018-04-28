@@ -3,7 +3,7 @@
 > 对于软件的安装，其实是很简单的，无非就是一些命令，等着就行，之后做一些简单的配置，就可以使用了。对于简单的使用者来说，足够了。但是这样的操作，时间一长就会忘记很多，我一直认同“好记忆，不如烂笔头”，刚好现在有时间，做一个记录，也方便以后查找，同时能帮助到需要的朋友就更加完美了。闲话就不说了，步入正题。
 
 
-> PostgreSQL 上手没有MySQL简单（MySQL做深了也是很难的），PostgreSQL 之前的版本，你叫它是一个关系型数据库吧，是称得上的，但是PostgreSQL9.3就内置了JSON数据类型，PostgreSQL9.4又支持了JSONB，这PostgreSQL不能称得上是一个关系数据库了，算是一个关系型数据库和NoSQL数据库的结合体。同时PostgreSQL PostGis又很好的支持空间数据存储和空间分析，这是它的又一个优势，下面就介绍一下PostgreSQL在CentOS7上的安装使用。
+> PostgreSQL 上手没有MySQL简单（MySQL做深了也是很难的），PostgreSQL 之前的版本，你叫它是一个关系型数据库吧，是称得上的，但是PostgreSQL9.3就内置了JSON数据类型，PostgreSQL9.4又支持了JSONB，这PostgreSQL不能称得上是一个关系数据库了，算是一个关系型数据库和NoSQL数据库的结合体。同时PostgreSQL PostGis又很好的支持空间数据存储和空间分析，这是它的又一个优势，下面就介绍一下PostgreSQL在CentOS7.2上的安装使用。
 
 
 ### 环境准备
@@ -75,12 +75,13 @@ Complete!
 
 [3] 更改配置
 
-> PostgreSQL默认安装完成之后，数据存储目录是在/var/lib/pgsql/[PostgreSQL的版本号]/data/目录下。这个数据目录所在页就是系统的根目录下，若之前把/var/目录配置的很大也是可以的，但是一般系统的磁盘空间都不是很大，所以这里要做一下更改。有两种方式：
+> PostgreSQL默认安装完成之后，数据存储目录是在/var/lib/pgsql/[PostgreSQL的版本号]/data/目录下。这个数据目录下的数据所占存储是系统的根目录，若之前把/var/目录配置的很大也是可以的，但是一般系统的磁盘空间都不是很大，所以这里要做一下更改。有两种方式：
 
  - 第一种方式是：挂载一个大的数据盘到PostgreSQL的data目录，这种方式较简单。
+
  - 第二种方式是：更改PostgreSQL的数据存储目录，这种方式较复杂些。
 
-> 这里使用第二种方式，做一下配置，看一下本系统的配置
+> 这里使用第二种方式，做一下配置，看一下本系统的存储配置信息
 
 ```
 [root@demo ~]# df -h
@@ -96,7 +97,7 @@ tmpfs                    4.9G     0  4.9G   0% /sys/fs/cgroup
 tmpfs                    984M     0  984M   0% /run/user/0
 ```
 
-> 能看到/home目录下较大，把数据目录放到/home目录下
+> 能看到/home目录下较大，把数据目录放到/home目录下,这个根据自己的情况进行更改
 
  - 创建数据目录
 
@@ -107,20 +108,20 @@ tmpfs                    984M     0  984M   0% /run/user/0
  - 更改数据目录所属组、所属主
 
 ```
-[root@demo ~]# chown postgres:postgres /home/postgresql_data
+[root@demo ~]# chown postgres:postgres /home/postgresql_data/
 ```
 
  - 更改数据目录权限
 
 ```
-[root@demo ~]# chmod 700 /home/postgresql_data
+[root@demo ~]# chmod 700 /home/postgresql_data/
 
 [root@demo ~]# ll /home/
 total 0
 drwx------. 2 postgres postgres 6 Apr 25 23:50 postgresql_data
 ```
 
- - 更改数据目录配置指向创建的目录
+ - 更改PostgreSQL的数据目录(/var/lib/pgsql/[PostgreSQL的版本号]/data/)配置指向上面创建的目录
 
 ```
 [root@demo ~]# vim /usr/lib/systemd/system/postgresql-9.5.service
@@ -130,6 +131,8 @@ drwx------. 2 postgres postgres 6 Apr 25 23:50 postgresql_data
 
 注意：有的时候直接复制过去会出问题，在向文件中写的字符建议自己敲，因为编码格式等原因会不对。
 ```
+
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-1.png)
 
  - 初始化数据库
 
@@ -201,7 +204,7 @@ Hint: Some lines were ellipsized, use -l to show in full.
 Created symlink from /etc/systemd/system/multi-user.target.wants/postgresql-9.5.service to /usr/lib/systemd/system/postgresql-9.5.service.
 ```
 
-[3] 更改postgres用户密码
+[3] 更改postgres用户密码(PostgreSQL安装之后默认的用户为postgres)
 
 ```
 [root@demo ~]# passwd postgres

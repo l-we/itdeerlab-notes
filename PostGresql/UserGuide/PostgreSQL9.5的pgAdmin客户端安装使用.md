@@ -1,6 +1,6 @@
 ### 前提环境
 
-> 使用上节中已经安装配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md)
+> 使用上节中已经安装配置好的PostgreSQL服务，详见[PostGreSQL9.5的简单配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGreSQL9.5%E7%9A%84%E7%AE%80%E5%8D%95%E9%85%8D%E7%BD%AE.md) 这一步骤可以不做,若自己不需要使用界面化的连接工具,偏向使用终端的化.
 
 ### 软件下载
 
@@ -30,11 +30,9 @@
 
 6. 等一会之后 点击【Finish】按钮
 
-[3] 浏览器会直接打开
+[3] 浏览器会自动打开
 
-> http://127.0.0.1:51972/browser/
-
-> 若没有自动打开，自己可以在浏览器中敲入以上地址
+> http://127.0.0.1:[port]/browser/
 
 > 之后就能进入到pgAdmin的管理界面中
 
@@ -62,4 +60,9 @@
      - 点击【Save】
 4. 显示界面
 
-> 界面效果还是不错的，Dashboard会实时显示一些信息，可以界面化管理PostgrSQL服务了。这里我就不贴图了，因为贴图在访问的时候占带宽太大，很多时候网络不好就是加载不出来。所以，我以上写的是文字提示，应该是很好看懂的。
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-4.png)
+
+
+5. 要退出的话,在桌面的下方任务栏中找到象鼻图标,右键, 点击 [Shutdown server] 之后点击[Yes]按钮.
+
+> 界面效果还是不错的，Dashboard会实时显示一些信息，可以界面化管理PostgrSQL服务了。以上安装过程我就不贴图了，文字描述应该清楚.因为贴图在访问的时候占带宽太大，很多时候网络不好就是加载不出来。所以，我以上写的是文字提示，应该是很好看懂的。
