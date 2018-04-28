@@ -80,27 +80,27 @@ bash-4.2$ exit
 
 > 点击 [工作区] --> [添加新的工作区] --> [Name]填值 --> [命名空间URI]填值 --> 勾选[默认工作区] --> 提交
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-8.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-8.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-9.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-9.png)
 
 > 点击[工作区名称] chinaosm 点击进去 --> 勾选[服务] 下所有的服务 --> 启用按钮
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-10.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-10.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-11.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-11.png)
 
 [2] 新建矢量数据源
 
 > 点击 [数据存储] --> [添加新的数据存储] --> 点击[s矢量数据源] -->点击 [PostGis] -->填写 存储的基本信息
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-12.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-12.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-13.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-13.png)
 
 > 工作区 - 数据源名称 - 说明 - 连接参数 - host - port - database - scheam - user - passwd 
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-14.png
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-14.png)
 
 [3] 创建样式和图表
 
