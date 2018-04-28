@@ -28,7 +28,7 @@
 
  5. 部署osm2pgsql，详见[Centos7.2部署osm2pgsql-0.94.0](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2osm2pgsql-0.94.0.md)
 
- 6. 下载中国地图及海图,导入数据到PostGis, 详见[PostGis2.4.4导入中国地图数据]()
+ 6. 下载中国地图及海图,导入数据到PostGis, 详见[PostGis2.4.4导入中国地图数据](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/PostGis2.4.4%E5%AF%BC%E5%85%A5%E4%B8%AD%E5%9B%BD%E5%9C%B0%E5%9B%BE%E6%95%B0%E6%8D%AE.md)
 
  7. 安装部署GeoServer，详见[Centos7.2部署GeoServer2.13.x](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/PostGresql/UserGuide/Centos7.2%E9%83%A8%E7%BD%B2GeoServer2.13.x.md)
 

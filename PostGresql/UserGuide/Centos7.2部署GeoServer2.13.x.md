@@ -72,7 +72,7 @@ Archive:  geoserver-2.13.x-2018-04-24-war.zip
 
 ### 结果验证
 
-[1] 浏览器访问
+> 浏览器访问
 
  - 打开 http://IP:8080/geoserver
 
