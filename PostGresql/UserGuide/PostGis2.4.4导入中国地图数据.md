@@ -144,11 +144,13 @@ Osm2pgsql took 2152s overall
 
 ```
 shp2pgsql -s 3857 -I -D /tmp/water-polygons-split-3857/water_polygons.shp ocean_all | psql -d demogisdb -U demo
-```
 
 bash-4.2$ exit
 [root@demo tmp]# cd
 [root@demo ~]# 
+```
+
+
 
 
 > 至此地图数据导入完成
