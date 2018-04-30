@@ -116,10 +116,67 @@ finishing deferred symbolic links:
 
 [1] 陆图数据导入
 
+> 只导入地图
+
 ```
 [root@demo tmp]# su postgres
 
-bash-4.2$ osm2pgsql -s -U postgres -H 127.0.0.1 -P 5432 -W -d demogisdb /tmp/china-latest.osm.pbf --style /home/postgresql_data/openstreetmap-carto-master/openstreetmap-carto.style
+bash-4.2$ osm2pgsql -s -U demo -H 127.0.0.1 -P 5432 -W -d demogisdb /tmp/china-latest.osm.pbf
+
+osm2pgsql version 0.94.0 (64 bit id space)
+
+Password: 12345678
+Using built-in tag processing pipeline
+......
+Sorting data and creating indexes for planet_osm_point
+Sorting data and creating indexes for planet_osm_line
+Sorting data and creating indexes for planet_osm_polygon
+Sorting data and creating indexes for planet_osm_roads
+Copying planet_osm_point to cluster by geometry finished
+Creating geometry index on planet_osm_point
+NOTICE:  Self-intersection at or near point 13317174.282055551 3548338.7415769785
+Copying planet_osm_roads to cluster by geometry finished
+Creating geometry index on planet_osm_roads
+NOTICE:  Self-intersection at or near point 11985875.570417937 4115611.1799857486
+Creating osm_id index on planet_osm_point
+Creating indexes on planet_osm_point finished
+All indexes on planet_osm_point created in 151s
+Completed planet_osm_point
+Creating osm_id index on planet_osm_roads
+Creating indexes on planet_osm_roads finished
+All indexes on planet_osm_roads created in 158s
+Completed planet_osm_roads
+Copying planet_osm_line to cluster by geometry finished
+Creating geometry index on planet_osm_line
+Copying planet_osm_polygon to cluster by geometry finished
+Creating geometry index on planet_osm_polygon
+Creating osm_id index on planet_osm_polygon
+Creating indexes on planet_osm_polygon finished
+All indexes on planet_osm_polygon created in 245s
+Completed planet_osm_polygon
+Creating osm_id index on planet_osm_line
+Creating indexes on planet_osm_line finished
+All indexes on planet_osm_line created in 282s
+Completed planet_osm_line
+Stopping table: planet_osm_nodes
+Stopped table: planet_osm_nodes in 0s
+Stopping table: planet_osm_ways
+Building index on table: planet_osm_ways
+Stopped table: planet_osm_ways in 1396s
+Stopping table: planet_osm_rels
+Building index on table: planet_osm_rels
+Stopped table: planet_osm_rels in 15s
+node cache: stored: 52911860(94.66%), storage efficiency: 50.46% (dense blocks: 426, sparse nodes: 50683905), hit rate: 94.66%
+
+Osm2pgsql took 2285s overall
+```
+
+> 导入样式及地图
+
+```
+[root@demo tmp]# su postgres
+
+bash-4.2$ osm2pgsql -s -U demo -H 127.0.0.1 -P 5432 -W -d demogisdb /tmp/china-latest.osm.pbf --style /home/postgresql_data/openstreetmap-carto-master/openstreetmap-carto.style
 
 osm2pgsql version 0.94.0 (64 bit id space)
 
