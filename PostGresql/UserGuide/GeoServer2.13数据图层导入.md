@@ -120,12 +120,12 @@ Archive:  sld.zip
   inflating: sld/water.sld 
 ```
 
-```
+> 修改脚本
 
+```
 [root@demo osmsld]# chmod +x /tmp/osmsld/sld/*
 
 [root@demo osmsld]# vim /tmp/osmsld/SLD_create.sh
-
 
 #  script to add layer/style information
 #  for every SLD file in our collection
@@ -165,12 +165,13 @@ for sldfile in *.sld; do
 
 done
 
-
 #curl -v -u admin:@pp\$4boundleSS -XPOST -d@layergroup.xml -H "Content-type: text/xml" \
 #  http://apps.opengeo.org/geoserver/rest/workspaces/osm/layergroups
-
-
 ```
+
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.29-1.png)
+
+> 执行脚本
 
 ```
 [root@demo osmsld]# cd sld
@@ -202,9 +203,9 @@ done
 
 [4] 查看图层及样式
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-15.png)
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.29-2.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.28-16.png)
+![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.29-3.png)
 
 
 [5] 创建图层组
@@ -286,7 +287,7 @@ done
 
 [6] 添加中文字体
 
- - 安装字体管理工具,详见[Centos7.2添加微软字体]()
+ - 安装字体管理工具,详见[Centos7.2添加微软字体](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/Linux/UserGuide/Centos7.2%E6%B7%BB%E5%8A%A0%E5%BE%AE%E8%BD%AF%E5%AD%97%E4%BD%93.md)
 
  - 查看字体情况
 

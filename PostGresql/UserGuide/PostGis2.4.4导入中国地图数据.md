@@ -75,7 +75,7 @@ Saving to: ‘water-polygons-split-3857.zip’
 
 total 946880
 -rwxr-xr-x. 1 root root 439481072 Apr 28 19:37 china-latest.osm.pbf
--rwxr-xr-x. 1 root ro创建图层数据表ot   2907051 Apr 28 20:09 openstreetmap-carto-master.zip
+-rwxr-xr-x. 1 root root   2907051 Apr 28 20:09 openstreetmap-carto-master.zip
 -rwxr-xr-x. 1 root root 530117251 Apr 28 19:36 water-polygons-split-3857.zip
 ```
 
@@ -91,7 +91,7 @@ Archive:  water-polygons-split-3857.zip
  extracting: water-polygons-split-3857/water_polygons.cpg  
   inflating: water-polygons-split-3857/water_polygons.dbf  
   inflating: water-polygons-split-3857/water_polygons.prj  
-  inflating: water-po创建图层数据表lygons-split-3857/water_polygons.shp  
+  inflating: water-polygons-split-3857/water_polygons.shp  
   inflating: water-polygons-split-3857/water_polygons.shx 
 ```
 
@@ -119,7 +119,7 @@ finishing deferred symbolic links:
 ```
 [root@demo tmp]# su postgres
 
-bash-4.2$ osm2pgsql -s -U demo -H 127.0.0.1 -P 5432 -W -d demogisdb /tmp/china-latest.osm.pbf --style /home/postgresql_data/openstreetmap-carto-master/openstreetmap-carto.style
+bash-4.2$ osm2pgsql -s -U postgres -H 127.0.0.1 -P 5432 -W -d demogisdb /tmp/china-latest.osm.pbf --style /home/postgresql_data/openstreetmap-carto-master/openstreetmap-carto.style
 
 osm2pgsql version 0.94.0 (64 bit id space)
 
