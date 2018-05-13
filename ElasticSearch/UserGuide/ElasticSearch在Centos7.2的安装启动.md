@@ -15,6 +15,7 @@
 > 个人准备了一台Centos7的Linux服务器，X86 64位操作系统，最小化安装。静态IP：192.168.1.210（master）
 
 ### 系统检查
+
 ```
 [root@master ~]# cat /etc/redhat-release 
 CentOS Linux release 7.2.1511 (Core)
