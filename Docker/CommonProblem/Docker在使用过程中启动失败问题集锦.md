@@ -160,3 +160,58 @@ Job for docker.service failed because the control process exited with error code
     service docker start 启动docker服务
 
 > 问题产生原因：
+
+
+### 问题五
+
+```
+[root@itdeer ~]# systemctl start docker
+Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xe" for details.
+
+```
+
+```
+[root@itdeer ~]# systemctl status docker
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/usr/lib/systemd/system/docker.service; disabled; vendor preset: disabled)
+   Active: failed (Result: exit-code) since Tue 2018-05-15 18:47:52 CST; 4s ago
+     Docs: http://docs.docker.com
+  Process: 13969 ExecStart=/usr/bin/dockerd-current --add-runtime docker-runc=/usr/libexec/docker/docker-runc-current --default-runtime=docker-runc --exec-opt native.cgroupdriver=systemd --userland-proxy-path=/usr/libexec/docker/docker-proxy-current --init-path=/usr/libexec/docker/docker-init-current --seccomp-profile=/etc/docker/seccomp.json $OPTIONS $DOCKER_STORAGE_OPTIONS $DOCKER_NETWORK_OPTIONS $ADD_REGISTRY $BLOCK_REGISTRY $INSECURE_REGISTRY $REGISTRIES (code=exited, status=1/FAILURE)
+ Main PID: 13969 (code=exited, status=1/FAILURE)
+
+May 15 18:47:50 sundafei systemd[1]: Starting Docker Application Container Engine...
+May 15 18:47:50 sundafei dockerd-current[13969]: time="2018-05-15T18:47:50.810609716+08:00" level=warning msg="could not change group /var/run/docker.sock to docker: group docker not found"
+May 15 18:47:50 sundafei dockerd-current[13969]: time="2018-05-15T18:47:50.813820636+08:00" level=info msg="libcontainerd: new containerd process, pid: 13974"
+May 15 18:47:51 sundafei dockerd-current[13969]: time="2018-05-15T18:47:51.823345223+08:00" level=warning msg="overlay2: the backing xfs filesystem is formatted without d_type support, which leads...
+May 15 18:47:52 sundafei dockerd-current[13969]: Error starting daemon: SELinux is not supported with the overlay2 graph driver on this kernel. Either boot into a newer kernel or disab...abled=false)
+May 15 18:47:52 sundafei systemd[1]: docker.service: main process exited, code=exited, status=1/FAILURE
+May 15 18:47:52 sundafei systemd[1]: Failed to start Docker Application Container Engine.
+May 15 18:47:52 sundafei systemd[1]: Unit docker.service entered failed state.
+May 15 18:47:52 sundafei systemd[1]: docker.service failed.
+Hint: Some lines were ellipsized, use -l to show in full.
+```
+
+> 解决方式：
+
+    关闭SELinux即可
+
+```
+[root@sundafei ~]# vim /etc/selinux/config 
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three two values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected. 
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted 
+
+```  
+
+> 问题产生原因：
+
+------

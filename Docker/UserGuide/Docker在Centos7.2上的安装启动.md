@@ -88,15 +88,14 @@ Complete!
 [4] 启动Docker
 
 ```
-systemctl start docker（启动）
 [root@study ~]# systemctl start docker
 ```
 
 [5] 设置开机启动
 
 ```
-systemctl enable docker（设置开机启动）
 [root@study ~]# systemctl enable docker
+
 Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service to /usr/lib/systemd/system/docker.service.
 ```
 
@@ -104,6 +103,7 @@ Created symlink from /etc/systemd/system/multi-user.target.wants/docker.service 
 
 ```
 [root@study ~]# systemctl status  docker
+
 ● docker.service - Docker Application Container Engine
    Loaded: loaded (/usr/lib/systemd/system/docker.service; enabled; vendor preset: disabled)
    Active: active (running) since Tue 2017-12-26 19:30:57 CST; 11s ago
