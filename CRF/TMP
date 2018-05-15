@@ -1,0 +1,413 @@
+    1  ls
+    2  cd /opt/
+    3  ls
+    4  cat /etc/redhat-release 
+    5  ls
+    6  yum install wget vim lsof -y
+    7  ls
+    8  wget http://192.168.0.220/source/sundafei/tools/apache-ant-1.9.9.tar.gz
+    9  wget http://192.168.0.220/source/sundafei/tools/apache-maven-3.3.9.tar.gz
+   10  wget http://192.168.0.220/source/sundafei/tools/gradle-4.0.tar.gz
+   11  wget http://192.168.0.220/source/sundafei/tools/node-v8.9.4-linux-x64.tar.gz
+   12  wget http://archive.redoop.com/CRF/x86/centos7/utils/jdk/1.8/jdk-8u112-linux-x64.tar.gz
+   13  ls
+   14  tar -zxf apache-ant-1.9.9.tar.gz 
+   15  tar -zxf apache-maven-3.3.9.tar.gz 
+   16  tar -zxf gradle-4.0.tar.gz 
+   17  tar -zxf jdk-8u112-linux-x64.tar.gz 
+   18  tar -zxf node-v8.9.4-linux-x64.tar.gz 
+   19  rm -fr *.tar.gz
+   20  ls
+   21  mv apache-ant-1.9.9/ ant-1.9.9
+   22  mv apache-maven-3.3.9/ maven-3.3.9
+   23  mv jdk1.8.0_112/ jdk-1.8
+   24  mv node-v8.9.4-linux-x64/ node-8.9.4
+   25  ls
+   26  cd /etc/profile.d/
+   27  ls
+   28  wget http://192.168.0.220/source/jdk/java.sh
+   29  ls
+   30  vim java.sh 
+   31  vim maven.sh
+   32  source /etc/profile
+   33  mvn -v
+   34  java -v
+   35  java -version
+   36  ls
+   37  ll /opt/
+   38  cp maven.sh > ant.sh
+   39  cat maven.sh > ant.sh
+   40  cat maven.sh > gradle.sh
+   41  cat maven.sh > node.sh
+   42  vim ant.sh 
+   43  vim gradle.sh
+   44  vim node.sh 
+   45  ls
+   46  cat ant.sh 
+   47  cat gradle.sh 
+   48  cat java.sh 
+   49  cat maven.sh 
+   50  cat node.sh 
+
+
+
+   51  source /etc/profile
+   52  node -v
+   53  npm -v
+   54  man -v
+   55  mvn -v
+   56  java -version
+   57  gradle -v
+   58  ant -v
+   59  ls
+   60  cd /opt/
+   61  ls
+   62  cd maven-3.3.9/
+   63  ls
+   64  mkdir working
+   65  cd working/
+   66  pwd
+   67  cd ..
+   68  ls
+   69  vim conf/settings.xml 
+   70  ls
+   71  cd ..
+   72  ls
+   73  cd ant-1.9.9/
+   74  ls
+   75  cd ..
+   76  ls
+
+
+   
+   77  yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel openldap-devel mysql-devel -y
+   78  exit
+   79  docker ps
+   80  ls
+   81  exit
+   82  vim /etc/locale.conf
+   83  cd /opt/
+   84  ls
+   85  yum install glibc-common -y
+   86  vim  /etc/sysconfig/i18n
+   87  vim  /etc/sysconfig/i18n
+   88  source   /etc/sysconfig/i18n
+   89  locale
+   90  exit
+   91  yum install rpmbuild -y
+   92  yum install rpmbuild -y
+   93  yum install rpmdevtools 
+   94  rpmbuild
+   95  rpmbuild -v
+   96  yum install rpmbuild -y
+   97  yum search rpmbuild
+   98  yum search rpm
+   99  yum install rpm-*
+  100  gradlew
+  101  pwd
+  102  cat /etc/redhat-release 
+  103  cd /opt/
+  104  ls
+  105  source /etc/profile
+  106  gradlew
+  107  ls
+  108  locale
+  109  source /etc/profile
+  110  vim /etc/locale.conf
+  111  source /etc/profile
+  112  locale
+  113  source /etc/profile
+  114  vim /etc/environment 
+  115  source /etc/environment
+  116  source /etc/profile
+  117  localedef -v -c -i en_US -f UTF-8 en_US.UTF-8
+  118  source /etc/profile
+  119  yum install rpm-build
+  120  exit
+  121  yum install sudo 
+  122  sudo
+  123  exit
+  124  yum -y install epel-release
+  125  yum search pip
+  126  yum install python-pip
+  127  pip -V
+  128  curl https://bintray.com/sbt/rpm/rpm |tee /etc/yum.repos.d/bintray-sbt-rpm.repo
+  129  yum install sbt -y
+  130  sbt
+  131  sbt -v
+  132  sbt -h
+  133  sbt -sbt-version
+  134  sbt version
+  135  exit
+  136  pip install virtualenv
+  137  find / -name *.whl
+  138  yum install autoconf libtool -y
+  139  history
+  140  exit
+  141  yum search cppunit
+  142  yum install [exec] configure: error: Package requirements (cppunit) were not met:
+  143       [exec] 
+  144       [exec] No package 'cppunit' found
+  145  yum install cppunit -y
+  146  yum install cppunit* -y
+  147  exit
+  148  cd /opt/
+  149  ls
+  150  wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2
+  151  ls
+  152  wget http://192.168.0.220/source/sundafei/tools/protobuf-2.5.0.tar.gz
+  153  ls
+  154  tar -zxvf protobuf-2.5.0.tar.gz 
+  155  ls
+  156  rm -fr protobuf-2.5.0.tar.gz 
+  157  ls
+  158  cd protobuf-2.5.0/
+  159  ls
+  160  cd ..
+  161  ls
+  162  cd protobuf-2.5.0/
+  163  ls
+  164  mkdir isntall
+  165  ls
+  166  rm -fr install
+  167  ls
+  168  cd ..
+  169  ls
+  170  mv protobuf-2.5.0/ install
+  171  mkdir protobuf-2.5.0
+  172  mv install/ protobuf-2.5.0/
+  173  ls
+  174  cd protobuf-2.5.0/
+  175  ls
+  176  mkdir source
+  177  mv install/* source/
+  178  ll source/
+  179  ls
+  180  ll install/
+  181  pwd
+  182  cd source/
+  183  ./configure --prefix=/opt/protobuf-2.5.0/install/  
+  184  make && make install
+  185  make
+  186  yum install cmake
+  187  yum install make
+  188  make && make install
+  189  ls
+  190  cd ..
+  191  ls
+  192  cd install/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  193  ls
+  194  ls
+  195  cd /etc/profile.d/
+  196  ls
+  197  cat maven.sh > protobuf.sh
+  198  vim protobuf.sh 
+  199  ll /opt/
+  200  vim protobuf.sh 
+  201  source /etc/profile
+  202  protoc --version
+  203  yum -y install lzo-devel zlib-devel autoconf automake libtool cmake openssl-devel
+  204  yum -y install  svn ncurses-devel   gcc*  lzo-devel zlib-devel autoconf automake libtool cmake openssl-devel
+  205  source /etc/profile
+  206  exit
+  207  ls
+  208  cd /opt/
+  209  ls
+  210  pip install virtualenv
+  211  pip install sqlalchemy-clickhouse
+  212  pip install mysqlclient
+  213  pip install impyla
+  214  pip install pyhive
+  215  pip install psycopg2
+  216  exit
+  217  cd /opt/
+  218  ls
+  219  cd maven-3.3.9/
+  220  ls
+  221  cd working/
+  222  ls
+  223  cd ..
+  224  ls
+  225  cd ..
+  226  ls
+  227  cd ..
+  228  ls
+  229  cd 
+  230  ll -a
+  231  ll .sbt/
+  232  ll .sbt/boot/
+  233  ll .gradle/
+  234  ll .gradle/native/
+  235  exit
+  236  ls
+  237  exit
+  238  pip install pygresql
+  239  pip install --upgrade pip
+  240  pip -versdion
+  241  pip -v
+  242  pip -V
+  243  pip install pygresql
+  244  pip install pg_config
+  245  pip install PyGreSQL
+  246  pip install PyGreSQL:5.0.4
+  247  pip install PyGreSQL@5.0.4
+  248  find / -name "pg_config" -print
+  249  yum install libpq-dev python-dev
+  250  yum search postgresql-dev
+  251  yum install postgresql-devel -y
+  252  yum search sqlite-dev
+  253  yum install sqlite-devel -y
+  254  find / -name "pg_config" -print
+  255  pip install PyGreSQL
+  256  exit
+  257  npm config set registry https://registry.npmjs.org/
+  258  npm publish --registry https://registry.npmjs.org/
+  259  npm i -g npm
+  260  npm -v
+  261  node -v
+  262  npm install -g cnpm --registry=https://registry.npm.taobao.org
+  263  exit
+  264  pip search TFrozenDict
+  265  exit
+  266  cd /opt/node-8.9.4/
+  267  ls
+  268  cd bin/
+  269  ls
+  270  cd ..
+  271  ls
+  272  cd lib/
+  273  ls
+  274  cd node_modules/
+  275  ls
+  276  exit
+  277  ls
+  278  pip
+  279  pip -V
+  280  pip install sqlalchemy-clickhouse
+  281  pip install mysqlclient
+  282  pip install psycopg2
+  283  pip install pyhive
+  284  pip install impyla
+  285  pip install PyMySQL
+  286  sudo yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel postgresql-devel openssl-devel openldap-devel mysql-devel sqlite-devel -y
+  287  pip install virtualenv
+  288  mkdir -p /usr/crf/current
+  289  virtualenv /usr/crf/current/superset
+  290  cd /usr/crf/current/
+  291  ls
+  292  cd superset/
+  293  ls
+  294  source /usr/crf/current/superset/bin/activate
+  295  exit
+  296  pip -V
+  297  node -v
+  298  npm -v
+  299  ls
+  300  cd /opt/
+  301  ls
+  302  cd node-8.9.4/
+  303  ls
+  304  cd bin/
+  305  ls
+  306  find / -name pip-10.0.1-py2.py3-none-any.whl
+  307  pip list
+  308  pip -h
+  309  pip install -h
+  310  pip install pymysql --cache-dir /tmp/pip/
+  311  ls
+  312  whereis pip
+  313  cd /usr/bin/
+  314  pip install pymysql --cache-dir /tmp/pip/
+  315  pip install pymysql --cache-dir=/tmp/pip/
+  316  ls
+  317  pwd
+  318  /usr/bin/pip install pymysql --cache-dir=/tmp/pip/
+  319  /usr/bin/pip2.7 install pymysql --cache-dir=/tmp/pip/
+  320  pip install --upgrade pip --cache-dir=/tmp/pip/
+  321  /usr/bin/pip2.7 install pymysql --cache-dir=/tmp/pip/
+  322  /usr/bin/pip2.7 install pymysql --cache-dir /tmp/pip/
+  323  pip -V
+  324  pip -list
+  325  pip list
+  326  pip uninstall PyMySQL
+  327  pip list
+  328  pip install PyMySQL --cache-dir=/tmp/pip/
+  329  pip -h
+  330  openssl -v
+  331  sudo yum upgrade python-setuptools
+  332  sudo yum install gcc gcc-c++  python-pip python-wheel 
+  333  sudo yum install libffi-devel python-devel postgresql-devel openssl-devel openldap-devel mysql-devel libsasl2-devel sqlite-devel -y
+  334  yum search libsasl2-devel
+  335  sudo yum install cyrus-sasl cyrus-sasl-devel
+  336  sudo yum -y upgrade
+  337  pip list
+  338  pip install mysqlclient --no-cache-dir
+  339  pip install sqlalchemy-clickhouse
+  340  pip install PyMySQL --no-cache-dir
+  341  pip install impyla --no-cache-dir
+  342  pip install pyhive --no-cache-dir
+  343  pip install psycopg2 --no-cache-dir
+  344  pip install pygresql --no-cache-dir
+  345  sudo yum upgrade python-setuptools
+  346  sudo yum install gcc gcc-c++  python-pip python-wheel 
+  347  sudo yum install libffi-devel python-devel postgresql-devel openssl-devel openldap-devel mysql-devel libsasl2-devel sqlite-devel -y
+  348  pip install virtualenv --no-cache-dir
+  349  cd /usr/lib/python2.7/site-packages
+  350  ls
+  351  ll PyMySQL-0.8.0.dist-info
+  352  ll PyMySQL-0.8.0.dist-info/
+  353  ls
+  354  ll http/
+  355  sudo yum install cyrus-sasl cyrus-sasl-devel
+  356  cd 
+  357  exit
+  358  cd /tmp/pip
+  359  ls
+  360  cd http/
+  361  ls
+  362  cd a/
+  363  ls
+  364  cd 1/
+  365  ls
+  366  cd 9/
+  367  ls
+  368  cd 5/
+  369  ls
+  370  cd 3/
+  371  ls
+  372  cd ..
+  373  ls
+  374  cd ..
+  375  ls
+  376  cd ..
+  377  ls
+  378  cd ..
+  379  ls
+  380  cd ..
+  381  ls
+  382  cd ..
+  383  ls
+  384  yum instll tree -y
+  385  yum install tree -y
+  386  tree ./
+  387  tree ./
+  388  tree ./
+  389  ls
+  390  exit
+  391  ls
+  392  history

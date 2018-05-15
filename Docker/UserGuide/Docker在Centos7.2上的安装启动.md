@@ -87,6 +87,16 @@ Complete!
 
 [4] 启动Docker
 
+ - 首先要关闭Selinux
+
+```
+[root@study ~]# vim /etc/selinux/config
+
+SELINUX=disabled
+```
+
+ - 启动
+
 ```
 [root@study ~]# systemctl start docker
 ```
