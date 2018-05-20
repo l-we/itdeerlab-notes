@@ -1,5 +1,5 @@
 
-> HDF工作流平台组件的编译环境Docker镜像制作,这里制作的Docker镜像,首先安装Docker
+> HDF工作流平台组件的编译环境,这里使用的是Docker镜像的方式,这里制作的Docker镜像,首先安装Docker
 
 ### 环境准备
 
@@ -79,6 +79,8 @@ Saving to: 'apache-ant-1.9.9.tar.gz'
 
 2018-05-15 15:45:52 (230 MB/s) - 'apache-ant-1.9.9.tar.gz' saved [5729204/5729204]
 
+可以去官网下载：https://archive.apache.org/dist/ant/binaries/
+
 [root@388c77ac52de /]# wget http://192.168.0.220/source/sundafei/tools/apache-maven-3.3.9.tar.gz
 --2018-05-15 15:46:02--  http://192.168.0.220/source/sundafei/tools/apache-maven-3.3.9.tar.gz
 Connecting to 192.168.0.220:80... connected.
@@ -101,6 +103,8 @@ Saving to: 'gradle-4.0.tar.gz'
 
 2018-05-15 15:46:09 (89.5 MB/s) - 'gradle-4.0.tar.gz' saved [67408758/67408758]
 
+官网下载地址：http://services.gradle.org/distributions/
+
 [root@388c77ac52de /]# wget http://192.168.0.220/source/sundafei/tools/node-v8.9.4-linux-x64.tar.gz
 --2018-05-15 15:46:15--  http://192.168.0.220/source/sundafei/tools/node-v8.9.4-linux-x64.tar.gz
 Connecting to 192.168.0.220:80... connected.
@@ -111,6 +115,9 @@ Saving to: 'node-v8.9.4-linux-x64.tar.gz'
 100%[===============================================================>] 18,188,331  --.-K/s   in 0.1s    
 
 2018-05-15 15:46:15 (156 MB/s) - 'node-v8.9.4-linux-x64.tar.gz' saved [18188331/18188331]
+
+
+官网下载地址：https://nodejs.org/dist/
 
 [root@388c77ac52de /]# wget http://archive.redoop.com/CRF/x86/centos7/utils/jdk/1.8/jdk-8u112-linux-x64.tar.gz
 --2018-05-15 15:46:22--  http://archive.redoop.com/CRF/x86/centos7/utils/jdk/1.8/jdk-8u112-linux-x64.tar.gz
@@ -203,6 +210,8 @@ export PATH=$NODE_HOME/bin:$PATH
  - 验证
 
 ```
+[root@388c77ac52de profile.d]# source /etc/profile
+
 [root@388c77ac52de profile.d]# node -v
 v8.9.4
 
@@ -269,26 +278,20 @@ OS:           Linux 3.10.0-327.el7.x86_64 amd64
 [3] 安装编译及依赖
 
 ```
+[root@388c77ac52de ~]# cd
+
 [root@388c77ac52de ~]# yum install epel-release -y
 
-[root@388c77ac52de ~]# yum install make cmake -y
+[root@388c77ac52de ~]# yum install make cmake rpmdevtools rpm-build -y
 
 
-[root@388c77ac52de ~]# yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel openldap-devel mysql-devel -y
+[root@388c77ac52de ~]# yum install gcc gcc-c++ libffi-devel python-devel python-pip python-wheel openssl-devel tree openldap-devel -y
 
 [root@388c77ac52de ~]# pip -V
 pip 8.1.2 from /usr/lib/python2.7/site-packages (python 2.7)
 ```
 
-
-```
-[root@914183c7c719 ~]# vim /etc/locale.conf
-LANG="en_US.UTF-8"
-```
-
-```
-[root@388c77ac52de ~]# yum install glibc-common -y
-```
+> 配置系统编码
 
 ```
 [root@914183c7c719 ~]# vim /etc/locale.conf
@@ -323,11 +326,7 @@ LC_ALL=
 
 ```
 
-```
-[root@388c77ac52de ~]# yum install rpmdevtools rpm-build -y
-
-
-```
+[4] 安装sbt
 
 ```
 [root@388c77ac52de ~]# curl https://bintray.com/sbt/rpm/rpm |tee /etc/yum.repos.d/bintray-sbt-rpm.repo
@@ -342,37 +341,20 @@ gpgcheck=0
 repo_gpgcheck=0
 enabled=1
 
-
-
 [root@388c77ac52de ~]# yum install sbt -y
 ```
 
-
+[5] 安装Python的虚拟环境
 
 ```
 [root@388c77ac52de ~]# pip install virtualenv
 
-
 [root@388c77ac52de ~]# yum install autoconf libtool -y
 
 [root@388c77ac52de ~]# yum install cppunit* -y
-
-
-
-
-
-
-反向代理设置有误
-
-
-
-
-
-
 ```
 
-
-
+[6] 安装protobuf
 
 ```
 [root@388c77ac52de ~]# cd /opt/
@@ -380,11 +362,10 @@ enabled=1
 
 [root@388c77ac52de opt]# tar -zxf protobuf-2.5.0.tar.gz 
 [root@388c77ac52de opt]# rm -fr protobuf-2.5.0.tar.gz 
-[root@388c77ac52de opt]# cd protobuf-2.5.0/
-
 [root@388c77ac52de opt]# mv protobuf-2.5.0/ protobuf-2.5.0-source
-[root@388c77ac52de opt]# mkdir -p protobuf-2.5.0/install
 
+[root@388c77ac52de opt]# mkdir -p protobuf-2.5.0/install
+[root@388c77ac52de opt]# cd protobuf-2.5.0-source
 
 [root@388c77ac52de protobuf-2.5.0-source]# ./configure --prefix=/opt/protobuf-2.5.0/install/
 
@@ -401,10 +382,41 @@ export PATH=$PROTOBUF_HOME/bin:$PATH
 libprotoc 2.5.0
 ```
 
+[7] 安装编译Superset的环境
 
+```
+[root@388c77ac52de opt]# yum install lzo-devel zlib-devel autoconf automake libtool cmake -y
 
+[root@388c77ac52de opt]# yum install  svn   ncurses-devel   gcc*  autoconf automake libtool cmake -y
 
+[root@388c77ac52de opt]# yum install postgresql-devel mysql-devel sqlite-devel -y
 
-[root@388c77ac52de opt]# yum install lzo-devel zlib-devel autoconf automake libtool cmake openssl-devel -y
+[root@388c77ac52de opt]# pip install --upgrade pip
+[root@388c77ac52de opt]# pip install psycopg2
+[root@388c77ac52de opt]# pip install pyhive
+[root@388c77ac52de opt]# pip install impyla
+[root@388c77ac52de opt]# pip install mysqlclient
+[root@388c77ac52de opt]# pip install sqlalchemy-clickhouse
+[root@388c77ac52de opt]# pip install pygresql
+[root@388c77ac52de opt]# pip install PyMySQL
 
-yum install  svn   ncurses-devel   gcc*  lzo-devel zlib-devel autoconf automake libtool cmake openssl-devel -y
+[root@388c77ac52de opt]# exit
+```
+
+### 导出镜像
+
+```
+[root@study ~]# docker commit 2cde23331e5a crf-bigtop/www.redoop.com:centos-7.2
+sha256:5e7ab50d247268ec78628b81da04ec2df1aa4f6571017638c65a9984660d0e61
+
+[root@study ~]# docker images
+REPOSITORY                  TAG                 IMAGE ID            CREATED             SIZE
+crf-bigtop/www.redoop.com   centos-7.2          5e7ab50d2472        17 seconds ago      3.28 GB
+docker.io/centos            7.2.1511            0a2bad7da9b5        6 months ago        195 MB
+```
+
+### 镜像保存
+
+```
+[root@study ~]# docker save 5e7ab50d2472 > crf-bigtop.tar
+```
