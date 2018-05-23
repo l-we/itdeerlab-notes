@@ -25,7 +25,39 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 
 ### 软件安装
 
-[1] JDK下载
+> 这里说明一下，Centos7.2的环境，默认安装完成就是有OpenJDK的，直接配置自己的OracleJDK就能覆盖掉OpenJDK，OpenJDK在很多应用运行环境中是没有问题的，但是有些编译环境还是有些小的问题，这里建议直接安装Oracle的JDK。下面简述OpenJDK的卸载。
+
+[1] OpenJDK卸载
+
+ - 检查
+
+```
+[root@study ~]# java -version
+openjdk version "1.8.0_65"
+OpenJDK Runtime Environment (build 1.8.0_65-b17)
+OpenJDK 64-Bit Server VM (build 25.65-b01, mixed mode)
+```
+
+ - 显示安装包
+
+```
+[root@study ~]# rpm -qa | grep openjdk
+java-1.8.0-openjdk-headless-1.8.0.65-3.b17.el7.x86_64
+java-1.8.0-openjdk-1.8.0.65-3.b17.el7.x86_64
+java-1.7.0-openjdk-1.7.0.91-2.6.2.3.el7.x86_64
+java-1.7.0-openjdk-headless-1.7.0.91-2.6.2.3.el7.x86_64
+```
+
+ - 卸载
+
+```
+[root@study ~]# yum -y remove java-1.8.0-openjdk-headless-1.8.0.65-3.b17.el7.x86_64
+[root@study ~]# yum -y remove java-1.8.0-openjdk-1.8.0.65-3.b17.el7.x86_64
+[root@study ~]# yum -y remove java-1.7.0-openjdk-1.7.0.91-2.6.2.3.el7.x86_64
+[root@study ~]# yum -y remove java-1.7.0-openjdk-headless-1.7.0.91-2.6.2.3.el7.x86_64
+```
+
+[2] JDK下载
 
 ```
 [root@study ~]# mkdir -p /opt/install
@@ -36,7 +68,7 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 官网下载地址:http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 ```
 
-[2] 解压
+[3] 解压
 
 ```
 [root@study install]# tar -zxvf jdk-8u*.tar.gz
@@ -44,7 +76,7 @@ Linux study 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x86
 [root@study install]# rm -fr jdk-8u*.tar.gz
 ```
 
-[3] 配置
+[4] 配置
 
 ```
 [root@study install]# vi /etc/profile.d/java.sh
@@ -55,8 +87,7 @@ export CLASSPATH=.:$JAVA_HOME/lib:$JRE_HOME/lib:$CLASSPATH
 export PATH=$JAVA_HOME/bin:$JRE_HOME/bin:$PATH
 ```
 
-[4] 使配置生效
-
+[5] 使配置生效
 
 ```
 [root@study install]# source /etc/profile
