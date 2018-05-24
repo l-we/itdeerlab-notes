@@ -65,7 +65,7 @@ pinned-dispatcher.type="PinnedDispatcher"
 ```
 [root@master kafka-manager-1.3.3.16]# ./bin/kafka-manager
 
-直接就可以启动，但是我这里使用的是2个节点的集群，Kafka-Manager默认启动的端口已经被占用了，所以这里我启动时指定端口号。
+直接就可以启动，但是我这里使用的是2个节点的集群，Kafka-Manager默认启动的端口9000已经被占用了，所以这里我启动时指定端口号。
 [root@master kafka-manager-1.3.3.16]# ./bin/kafka-manager -Dhttp.port=9500
 
 07:42:38,339 |-INFO in ch.qos.logback.classic.LoggerContext[default] - Could NOT find resource [logback.groovy]
@@ -74,6 +74,12 @@ pinned-dispatcher.type="PinnedDispatcher"
 [info] play.api.Play - Application started (Prod)
 [info] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:9500
 [info] k.m.a.KafkaManagerActor - Updating internal state...
+```
+
+> 后台启动
+
+```
+[root@master kafka-manager-1.3.3.16]# nohup /opt/install/kafka-manager-1.3.3.16/bin/kafka-manager -Dconfig.file=/opt/install/kafka-manager-1.3.3.16/conf/application.conf &
 ```
 
 [5] 前端检查
