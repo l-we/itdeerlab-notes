@@ -140,4 +140,5 @@ total 59280
 drwxr-xr-x 3 root root       16 May 24 06:56 tmp
 ```
 
-> 至此Kafka-Manager就编译完成了，下一步开始做测试，验证打出来的包是可以使用的。
+> 至此Kafka-Manager就编译完成了，下一步开始做测试，验证打出来的包是可以使用的。这里分享一下我打包出来的可执行程序包
+链接：https://pan.baidu.com/s/1U4TPNYW6WBYIxYK9vihK6w 密码：ltwf
