@@ -1,0 +1,5 @@
+time hadoop jar /usr/hdp/2.6.1.0-129/hadoop-mapreduce/hadoop-mapreduce-client-jobclient.jar TestDFSIO -write -nrFiles 2 -fileSize 2GB
+
+
+
+hadoop jar /usr/hdp/2.6.1.0-129/hadoop-mapreduce/hadoop-mapreduce-client-jobclient.jar TestDFSIO -write -nrFiles 10 -fileSize 10MB
