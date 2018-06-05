@@ -1,0 +1,125 @@
+docker run --rm -v /home/sundafei/Desktop/RDF/source:/ws -v /home/sundafei/Soft/install/maven/working:/root/.m2/repository -v /home/sundafei/.npm:/root/.npm -v /home/sundafei/.cache:/root/.cache -v /home/sundafei/.gradle:/root/.gradle -v /home/sundafei/.ivy2:/root/.ivy2 -v /tmp:/tmp --workdir /ws 23b16b530457 bash -l -c " cd bigtop ; ./gradlew kafka-rpm"
+
+
+KKKKKKKKKKKKKKK TAR_DIR  /ws/bigtop/build/kafka/tar/kafka-0.10.1.1
+YYYYYYYYYYYYYYY TARBALL_SRC   kafka-0.10.1.1-src.tgz
+UUUUUUUUUUUUUUU TARBALL_DST  kafka-0.10.1.1.tar.gz
+EEEEEEEEEEEEEEE DOWNLOAD_DST  /ws/bigtop/dl/kafka-0.10.1.1.tar.gz
+FFFFFFFFFFFFFFF SEED_TAR  /ws/bigtop/build/kafka/tar/kafka-0.10.1.1.tar.gz
+WWWWWWWWWWWWWWW config.bigtop.builddir /ws/bigtop/build/kafka/tar/
+Copy /ws/bigtop/dl/kafka-0.10.1.1.tar.gz to /ws/bigtop/build/kafka/tar/kafka-0.10.1.1.tar.gz
+:kafka-srpm
+11111111111111 NAME  kafka
+22222222222222 PKG_NAME_BASE   kafka
+33333333333333 RDF_PACKAGE_RPMVERSION  _3_0_0_0_512
+44444444444444 PKG_NAME  kafka_3_0_0_0_512
+55555555555555 PKG_NAME_FOR_PKG  kafka
+66666666666666 PKG_BUILD_DIR  /ws/bigtop/build/kafka
+77777777777777 SEED_TAR  /ws/bigtop/build/kafka/tar/kafka-0.10.1.1.tar.gz
+88888888888888 PKG_VERSION  0.10.1.1
+99999999999999 BASE_VERSION  0.10.1.1
+00000000000000 PKG_OUTPUT_DIR  /ws/bigtop/output/kafka
+sundafei BASE_DIR  /ws/bigtop
+
+
+docker run --rm -v /home/sundafei/Desktop/RDF/source:/ws -v /home/sundafei/Soft/install/maven/working:/root/.m2/repository -v /home/sundafei/.npm:/root/.npm -v /home/sundafei/.cache:/root/.cache -v /home/sundafei/.gradle:/root/.gradle -v /home/sundafei/.ivy2:/root/.ivy2 -v /tmp:/tmp --workdir /ws 23b16b530457 bash -l -c " cd bigtop ; ./gradlew zookeeper-rpm"
+
+
+rdf_stack_version = "1.0.3.0-512"
+rdf_package_version = "-1-0-3-0-512"
+rdf_stack_name = "rdf"
+
+crh_version_with_bn = "1.0.3.0-512"
+crh_version_as_name = "-1-0-3-0-512"
+crh_tag = "rdf"
+
+def final RDF_STACK_VERSION = config.bigtop.rdf_stack_version
+def final RDF_PACKAGE_VERSION = config.bigtop.rdf_package_version
+def final RDF_STACK_NAME = config.bigtop.rdf_stack_name
+
+
+def final CRH_VERSION_WITH_BN = config.bigtop.crh_version_with_bn
+def final CRH_VERSION_AS_NAME = config.bigtop.crh_version_as_name
+def final CRH_TAG = config.bigtop.crh_tag
+
+
+PKG_NAME_BASE kafka
+RDF_PACKAGE_RPMVERSION  _3_0_0_0_512
+
+
+
+NAME 		kafka 	sundafei
+PKG_NAME_BASE 		kafka sundafei
+RDF_PACKAGE_RPMVERSION 		_3_0_0_0_512 sundafei
+PKG_NAME 	kafka_3_0_0_0_512 sundafei
+PKG_NAME_FOR_PKG 	kafka sundafei
+PKG_BUILD_DIR 		/ws/build/kafka sundafei
+SEED_TAR 	/ws/build/kafka/tar/kafka-0.10.1.1.tar.gz sundafei
+PKG_VERSION 	0.10.1.1 sundafei 
+BASE_VERSION 	0.10.1.1 sundafei
+PKG_OUTPUT_DIR 	/ws/output/kafka
+
+
+
+redoop.com-new-redoop-123-ajefa-2
+
+
+
+
+Docker编译命令：
+
+docker run --rm -v /home/sundafei/Desktop/Bigtop/:/ws/ -v /home/sundafei/Soft/install/maven/working/:/root/.m2/repository/ -v /home/sundafei/.ant/:/root/.ant/ -v /home/sundafei/.npm/:/root/.npm/ -v /home/sundafei/.cache/:/root/.cache/ -v /home/sundafei/.gradle/:/root/.gradle/ -v /home/sundafei/.ivy2:/root/.ivy2/ -v /tmp:/tmp/ --workdir /ws 23b16b530457 bash -l -c " cd bigtop ; ./gradlew storm-clean"
+
+
+
+测试之前执行的命令：
+cd /opt
+wget http://192.168.0.220/source/mpack/rdf-ambari-mpack-0.1.0.0.3.0.0-512.tar.gz
+ambari-server install-mpack --mpack=/opt/rdf-ambari-mpack-0.1.0.0.3.0.0-512.tar.gz --purge --verbose
+ambari-server restart
+
+
+
+
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpQIBAAKCAQEA960hSN9eIbUDG0wZwkbxvcCGmFxfbL1IAOvPYcXWoc8jqYF2
+hZO9gyVLpV6jInafA10cY+l2YxWAXLOSRjQksGymcexyh8I5VCYgzLSCx34H3Cvr
+bo7vHXYpPHkgIysbpd9P80xEEFz8jIp3SyraEyLdGCG+uSheLyJGiRBBzGsnzzYv
+vbKABPRj8qNrGLUWD2EP61fI/cLw/CeJwpqdBHCFQ6D3Z9SeVWadkkRgcP1Qnyj8
+wLNW2z7D5YMT561IB5ZNqOtwwvNiO6D8b/XRYbD2DM1NobDUI7908YN2rZHpB9Kl
+o23U4KPK7/vYPUCmCZXTIQ1Od/VEutNJRFsz4wIDAQABAoIBAQCpCf+ylcjQJpPF
+OK5H+1WYVWNHb5wtQg53mnnC2F0BuLc1REfZKRlp/bVgW3Pp3J3wlMcApeGIBK/E
+FUcbJRF5W95J2L/eSkAIX7F5JSYw86J3sX4QyfsG15OTU3QMrKpFDmGpwv6dUGmJ
+niOHKOsHrn7JrpZWFugZMUKE35SY553acv8Me0aegVy3naSyOs+N9CWKXfzEmyQB
+jXzkA5JmCzDnRcMvaF2RNoUCrqsVt+XhXHZw7z50+Uwg+wcJ681fBdAWh6v0hQTy
+So6zcpQKbnKK7c0UsoUL1T2b1+omT1uDbUbw4KO8mTv6VdVIbZ12s4aF5MCuJNqx
+sOwySb3ZAoGBAP55s8JvWOlgI8j+C1TK6FaO8bTns8IC2R0NUtC2N5nn1jCsZNmd
+1VQnXHuKhsffiDlTBIjEn/7bSExKqIK987tXFc5frLwJTLjtvMCU+575JaiM0Jud
+2jcM7d3dtOwCjTviD2vjgSD+AQNDC+PbY+XsPp6zGXbOcSw7hBrQhsnFAoGBAPko
+//Li7qE6QHYXaD5p9ibskWyAeb4JzOSOKR9lc3P3kcHUbk1GVvdL7qL7ZazToA2F
+PJQBK9CIUUGXjO36nG1t8x+7k3o/oosoVnRyqW6MogHnWVPtBv6f4r8JkJG3yjaZ
+0m+oOIuKPSE/n08aCOaqUvrMcwMaYKVqJvm7wWmHAoGBANlA784Mn9zGXmbHNMdU
+X90eNo7azaXSJqfd6xkSqA92VW/CjmsXi7xHynYSgxT66uL91D4rl+jOL0Aq8QiF
+wSLsq0pAdkkmq2CqXt4Pk25aiOMILUTeFCGxoRYspLxlRUydp8rVNTYEhLrTL8B9
+WiE+ewukHhZHE2nO+e6mnpx9AoGAcSlK3cBtivJO9pN49+feMR1+it3q7QG8eg2K
+5cSI5CGLpJHbquMIenaVIpa1PgI7jgh2U+4YPTS8WuL+0dLhmt217zKdL4eZRkSC
+x46QHzJmHiE5s+FSLPDm5cbtTxE/GP9R0P6A9/dH/kLMEvwLEOBIobmbfsxLGrWU
+kBXTKR8CgYEA9W2+v0AT68DBClfxrEVhLORR2rn0PhrWdYGqNSvZ8gwCfRWSvsUa
+k8u48UDbbtkbxvtjuLVJ3iOKEo46d6WRl53ieND2ztzjIrVIa4MmgVRwJ5MU0vYY
+mIeoOIunMMkS8OIS1cEt16+bXv3sfxHTsyDHL3DfPolG49AS/Qs4y8o=
+-----END RSA PRIVATE KEY-----
+
+
+
+docker run --rm -it -v /home/sundafei/WorkSpace/RDF/Nifi/apache/nifi-1.2.0/:/work/ -v /home/sundafei/Soft/install/maven/working/:/opt/install/maven/working/ --workdir /work itdeer.cn/centos-maven:3.3.9 bash -l -c "  mvn -T 2.0C clean install -Dmaven.test.skip=true"
+
+
+docker run --rm -v /home/sundafei/Desktop/Bigtop/:/ws/ -v /home/sundafei/Soft/install/maven/working/:/root/.m2/repository/ -v /home/sundafei/.ant/:/root/.ant/ -v /home/sundafei/.npm/:/root/.npm/ -v /home/sundafei/.cache/:/root/.cache/ -v /home/sundafei/.gradle/:/root/.gradle/ -v /home/sundafei/.ivy2:/root/.ivy2/ -v /tmp:/tmp/ --workdir /ws 23b16b530457 bash -l -c " cd bigtop ; ./gradlew nifi-rpm --debug"
+
+
+
+
+
+
+
+
