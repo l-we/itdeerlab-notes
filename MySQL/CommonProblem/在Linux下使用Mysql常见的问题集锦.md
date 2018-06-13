@@ -72,6 +72,13 @@ Query OK, 0 rows affected (0.00 sec)
 mysql> exit
 ```
 
+> 这里有一些区别在不同的版本中，在5.5的版本中，修改密码的语句如以下语句：
+
+```
+mysql> update user set PASSWORD=PASSWORD('Itdeer123$%^') where User='root';
+mysql> flush privileges;
+```
+
 - 把配置文件修改回来
 
 ```
