@@ -15,7 +15,7 @@
 ### 查看环境
 
 ```
-[root@study ~]# cat /etc/redhat-release 
+[root@study ~]# cat /etc/redhat-release
 CentOS Linux release 7.2.1511 (Core)
 
 [root@study ~]# uname -a

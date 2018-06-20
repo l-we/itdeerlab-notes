@@ -55,7 +55,7 @@ Complete!
 [root@localhost ~]# yum install tigervnc-server
 
 Installed:
-  tigervnc-server.x86_64 0:1.8.0-5.el7                                                                                                                                   
+  tigervnc-server.x86_64 0:1.8.0-5.el7
 
 Complete!
 ```
