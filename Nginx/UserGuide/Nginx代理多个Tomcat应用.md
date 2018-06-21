@@ -60,7 +60,7 @@ nginx   17947 nginx    6u  IPv4  41378      0t0  TCP *:http (LISTEN)
 
 ### 整体架构
 
-![image](https://note.youdao.com/yws/api/personal/file/F49F6AF90B4C4A3AAEA702CBA7728FDA?method=download&shareKey=7383d76f34f1c697ebedbf8a6450d969)
+![201862114954](http://panrhkqz9.bkt.clouddn.com/201862114954.png)
 
 ### 准备三个Tomcat的Web服务器
 
@@ -234,7 +234,7 @@ rm -fr /opt/install/tomcat3/webapps/*
 
 ```
 
-![image](https://note.youdao.com/yws/api/personal/file/356F793113324D64AF15147D14E9FC73?method=download&shareKey=7383d76f34f1c697ebedbf8a6450d969)
+![2018621141025](http://panrhkqz9.bkt.clouddn.com/2018621141025.png)
 
 ### 修改Nginx
 
@@ -367,7 +367,7 @@ http://www.demotest3.com/
 ```
 
 出现:
-![image](https://note.youdao.com/yws/api/personal/file/B375326DA9DB4F2FA16E7E8483AABE45?method=download&shareKey=7383d76f34f1c697ebedbf8a6450d969)
+![2018621141054](http://panrhkqz9.bkt.clouddn.com/2018621141054.png)
 
 > 原因
 
@@ -414,8 +414,7 @@ SELINUX=disabled
 
 > 结果
 
-![image](https://note.youdao.com/yws/api/personal/file/DCD24782B7304C9395EBCEDDDBE53A6D?method=download&shareKey=7383d76f34f1c697ebedbf8a6450d969)
-
+![2018621141113](http://panrhkqz9.bkt.clouddn.com/2018621141113.png)
 
 > 本案例讲解的是使用同一台服务器，模拟一个Nginx代理三个tomcat的应用，通过上面顺序步骤的配置，即可实现此功能
 之后还会有一个Nginx代理一个Tomcat的多个应用及一个应用的负载配置，敬请关注

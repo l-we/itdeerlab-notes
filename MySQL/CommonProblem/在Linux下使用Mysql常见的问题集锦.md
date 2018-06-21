@@ -171,7 +171,17 @@ mysql> update user set authentication_string=PASSWORD('newpass') where User='roo
 mysql> flush privileges;
 mysql> exit;
 ```
-  
+
+> 注意
+
+```
+5.7版本之前
+update mysql.user set PASSWORD=password('123') where user='root';
+flush privileges;
+5.7版本及之后
+update mysql.user set anthentication_string=password('你的密码') where user='root';
+flush privileges;
+```
 ### 问题五：Mysql区分大小写
 
 > 在Linux环境下Mysql安装完成之后默认是区分大小写的，在部署应用的时候会遇到找不到表的时候，

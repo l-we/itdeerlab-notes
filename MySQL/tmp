@@ -1,6 +1,0 @@
-5.7版本之前
-update mysql.user set PASSWORD=password('123') where user='root';
-flush privileges;
-5.7版本及之后
-update mysql.user set anthentication_string=password('你的密码') where user='root';
-flush privileges;

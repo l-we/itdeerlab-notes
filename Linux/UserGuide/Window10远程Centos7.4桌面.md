@@ -113,14 +113,14 @@ Jun 05 23:59:14 localhost.localdomain xrdp[11520]: (11520)(139829098580416)[INFO
 
 ### Window连接
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/linux/2018.06.06-1.png)
+![201862114358](http://panrhkqz9.bkt.clouddn.com/201862114358.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/linux/2018.06.06-2.png)
+![201862114415](http://panrhkqz9.bkt.clouddn.com/201862114415.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/linux/2018.06.06-3.png)
+![201862114427](http://panrhkqz9.bkt.clouddn.com/201862114427.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/linux/2018.06.06-4.png)
+![201862114443](http://panrhkqz9.bkt.clouddn.com/201862114443.png)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/linux/2018.06.06-5.png)
+![201862114455](http://panrhkqz9.bkt.clouddn.com/201862114455.png)
 
 > 已经可以远程连接到Centos桌面了，可以愉快的接着开发了。

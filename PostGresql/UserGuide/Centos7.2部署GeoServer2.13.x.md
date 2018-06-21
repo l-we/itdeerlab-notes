@@ -80,6 +80,6 @@ Archive:  geoserver-2.13.x-2018-04-24-war.zip
 
  - 密码为: geoserver
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/PostGresql/2018.04.27-4.png)
+![2018621141724](http://panrhkqz9.bkt.clouddn.com/2018621141724.png)
 
 > 至此GeoServer运行成功

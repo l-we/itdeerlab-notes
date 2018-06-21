@@ -6,32 +6,32 @@
 
 > 在浏览器打开
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-3.png)
+![201862113544](http://panrhkqz9.bkt.clouddn.com/201862113544.png)
 
 > 查看Kafka版本
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-4.png)
+![2018621135425](http://panrhkqz9.bkt.clouddn.com/2018621135425.png)
 
 > 添加集群
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-5.png)
+![2018621135451](http://panrhkqz9.bkt.clouddn.com/2018621135451.png)
 
 > 添加完成 点击去Go to cluster view
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-6.png)
+![2018621135511](http://panrhkqz9.bkt.clouddn.com/2018621135511.png)
 
 > 显示集群信息(有2个Topic 和 1个Brokers)
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-7.png)
+![2018621135528](http://panrhkqz9.bkt.clouddn.com/2018621135528.png)
 
 > 显示Topic信息
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-8.png)
+![2018621135550](http://panrhkqz9.bkt.clouddn.com/2018621135550.png)
 
 > 点击创建Topic
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-9.png)
+![201862113567](http://panrhkqz9.bkt.clouddn.com/201862113567.png)
 
 > 查看Brokers详情
 
-![image](https://github.com/ItdeerLab/itdeerlab-notes/blob/images/Kafka/2018.05.24-10.png)
+![2018621135620](http://panrhkqz9.bkt.clouddn.com/2018621135620.png)
