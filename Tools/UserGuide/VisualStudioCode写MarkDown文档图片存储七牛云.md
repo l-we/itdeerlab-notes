@@ -10,10 +10,13 @@
 
 ### 安装VisualStudioCode软件
 
+> 在这里不详细介绍VisualStudioCode软件的安装，如有需要可以查看相关的文档
 
+[1] 在Window下安装方式 详见 [Window下安装VisualStudioCode](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/Tools/SoftUtils/Window%E4%B8%8B%E5%AE%89%E8%A3%85VisualStudioCode.md)
+
+[2] 在Centos7.2下安装方式 详见 [Centos7.2下安装VisualStudioCode]()
 
 ### 安装插件
-
 
 
 ### 申请七牛云

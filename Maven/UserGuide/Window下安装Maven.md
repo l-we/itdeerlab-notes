@@ -9,7 +9,7 @@
 
 [1] 安装JDK
 
-> 
+> 这里不赘述，详情，请参考[JDK在Window下安装配置](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/JDK/UserGuide/JDK%E5%9C%A8Window%E4%B8%8B%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.md)
 
 [2] 安装包下载
 
