@@ -7,7 +7,11 @@
 
 ### Window下安装
 
-[1] 安装包下载
+[1] 安装JDK
+
+> 
+
+[2] 安装包下载
 
 > 下载地址：https://maven.apache.org/download.cgi
 
@@ -27,7 +31,7 @@ apache-maven-3.5.3-bin.tar.gz
 
 ![2018621182946](http://panrhkqz9.bkt.clouddn.com/2018621182946.png)
 
-[2] 配置环境变量
+[3] 配置环境变量
 
  - 在电脑桌面[我的电脑] 点击右键，[属性]
 

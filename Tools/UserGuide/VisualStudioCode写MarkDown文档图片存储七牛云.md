@@ -8,7 +8,7 @@
 
 > 下面容我慢慢道来，按照我的步骤走，简单省力。
 
-### 按照一个VisualStudioCode软件
+### 安装VisualStudioCode软件
 
 
 
