@@ -10,8 +10,6 @@
 
 [1] 开始创建项目
 
-![2018621175855](http://panrhkqz9.bkt.clouddn.com/2018621175855.png)
-
 创建maven项目的详情 请参考 [ 使用Idea创建一个maven项目](https://github.com/ItdeerLab/itdeerlab-notes/blob/notes/Tools/UserGuide/%E4%BD%BF%E7%94%A8Idea%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AAMaven%E9%A1%B9%E7%9B%AE.md)
 
 [2] 添加依赖
@@ -29,8 +27,9 @@
 ![2018621235229](http://panrhkqz9.bkt.clouddn.com/2018621235229.png)
 
 ```
-package cn.itdeer;
+package cn.itdeer.zookeeper;
 
+import org.apache.log4j.Logger;
 import org.apache.zookeeper.server.ServerConfig;
 import org.apache.zookeeper.server.ZooKeeperServerMain;
 import org.apache.zookeeper.server.quorum.QuorumPeerConfig;
@@ -41,13 +40,14 @@ import java.util.Properties;
 
 /**
  * Description : 启动一个Zookeeper服务
- * PackageName : cn.itdeer
+ * PackageName : cn.itdeer.zookeeper
  * ProjectName : Demo
  * CreatorName : itdeer.cn
- * CreateTime : 2018/6/21/23:51
+ * CreateTime : 18-6-22/上午10:22
  */
 public class StartZookeeper {
 
+    private Logger logger = Logger.getLogger(getClass());
     private ServerConfig config = new ServerConfig();
 
     /**
@@ -64,7 +64,9 @@ public class StartZookeeper {
      * @throws Exception
      */
     public void startZookeeper() throws Exception{
+
         File zookeeper_dir = File.createTempFile("zookeeper", "test");
+
         if (zookeeper_dir.delete() && zookeeper_dir.mkdir()) {
 
             /*
@@ -83,23 +85,24 @@ public class StartZookeeper {
 
             config.readFrom(quorumConfiguration);
 
-            System.out.println("配置加载完成.....");
+            logger.info("配置加载完成.....");
+
             /*
              * 启动新线程
              */
             new Thread("zookeeper") {
                 public void run() {
                     try {
-                        System.out.println("启动 Local ZooKeeper .....");
+                        logger.info("启动 Local ZooKeeper .....");
                         new ZooKeeperServerMain().runFromConfig(config);
                     } catch (IOException e) {
-                        System.out.println("启动 Local ZooKeeper Failed:" + e.getStackTrace());
+                        logger.error("启动 Local ZooKeeper Failed:" + e.getStackTrace());
                         e.printStackTrace(System.err);
                     }
                 }
             }.start();
         } else {
-            System.out.println("Failed to delete or create domain dir for Zookeeper");
+            logger.warn("Failed to delete or create domain dir for Zookeeper");
         }
     }
 }
@@ -108,8 +111,27 @@ public class StartZookeeper {
 
 [4] 启动验证
 
-![2018622000](http://panrhkqz9.bkt.clouddn.com/2018622000.png)
+```
+......
+10:27:27,874  INFO StartZookeeper:59 - 配置加载完成.....
+10:27:27,876  INFO StartZookeeper:67 - 启动 Local ZooKeeper .....
+10:27:27,878  INFO ZooKeeperServerMain:95 - Starting server
+10:27:37,914  INFO ZooKeeperServer:100 - Server environment:zookeeper.version=3.4.6--1, built on 04/18/2018 04:22 GMT
+10:27:37,914  INFO ZooKeeperServer:100 - Server environment:host.name=itdeer
+10:27:37,916  INFO ZooKeeperServer:100 - Server environment:java.version=1.8.0_73
+10:27:37,917  INFO ZooKeeperServer:100 - Server environment:java.vendor=Oracle Corporation
+
+......
+
+10:27:37,917  INFO ZooKeeperServer:100 - Server 
+10:27:37,927  INFO ZooKeeperServer:755 - tickTime set to 4000
+10:27:37,927  INFO ZooKeeperServer:764 - minSessionTimeout set to -1
+10:27:37,927  INFO ZooKeeperServer:773 - maxSessionTimeout set to -1
+10:27:37,941  INFO NIOServerCnxnFactory:94 - binding to port 0.0.0.0/0.0.0.0:2181
+```
 
 [5] 检测端口
 
 ![20186220329](http://panrhkqz9.bkt.clouddn.com/20186220329.png)
+
+> 说明Zookeeper服务已经启动了，并且监听在2181端口上，可以使用了。

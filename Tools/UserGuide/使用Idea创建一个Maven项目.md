@@ -81,3 +81,18 @@
 ```
 
 > 基本环境已经可以了，以上的依赖及属性配置添加都是可以不需要的，Maven项目就可以直接开始写代码了，只是添加一些基本的依赖，方便之后的开发。
+
+> 已经做到这里了，就接着做完一点，把Log的配置文件放上去，这样输出的日志就较为完善些，
+
+> 在项目目录中的resources目录下创建一个名称为log4j.properties 添加以下内容：
+
+```
+### set log levels ###
+log4j.rootLogger = info,stdout
+log4j.appender.stdout = org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target = System.out
+log4j.appender.stdout.layout = org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern =  %d{ABSOLUTE} %5p %c{1}:%L - %m%n
+```
+
+> 这样即可
