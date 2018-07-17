@@ -1,6 +1,16 @@
 
 > 这里讲解一些Docker的简单使用
 
+### Docker下载一个指定版本的CentOS系统
+
+```
+镜像源地址：https://hub.docker.com/explore/
+```
+
+```
+docker pull centos:7.2.1511
+```
+
 
 ### 容器导入和导出
 
