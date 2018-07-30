@@ -17,7 +17,7 @@
 
  - 找到下载页面
 
- ![201862118121](http://panrhkqz9.bkt.clouddn.com/201862118121.png)
+ ![201862118121](http://note.itdeer.cn/201862118121.png)
 
 > 这里下载3.5.3的版本
 
@@ -27,34 +27,34 @@ apache-maven-3.5.3-bin.tar.gz
 
 > 放到D盘的根目录下,解压，改名为Maven
 
-![2018621181619](http://panrhkqz9.bkt.clouddn.com/2018621181619.png)
+![2018621181619](http://note.itdeer.cn/2018621181619.png)
 
-![2018621182946](http://panrhkqz9.bkt.clouddn.com/2018621182946.png)
+![2018621182946](http://note.itdeer.cn/2018621182946.png)
 
 [3] 配置环境变量
 
  - 在电脑桌面[我的电脑] 点击右键，[属性]
 
-![2018621181816](http://panrhkqz9.bkt.clouddn.com/2018621181816.png)
+![2018621181816](http://note.itdeer.cn/2018621181816.png)
 
-![2018621181844](http://panrhkqz9.bkt.clouddn.com/2018621181844.png)
+![2018621181844](http://note.itdeer.cn/2018621181844.png)
 
-![2018621181933](http://panrhkqz9.bkt.clouddn.com/2018621181933.png)
+![2018621181933](http://note.itdeer.cn/2018621181933.png)
 
-![2018621182056](http://panrhkqz9.bkt.clouddn.com/2018621182056.png)
+![2018621182056](http://note.itdeer.cn/2018621182056.png)
 
-![2018621182121](http://panrhkqz9.bkt.clouddn.com/2018621182121.png)
+![2018621182121](http://note.itdeer.cn/2018621182121.png)
 
-![2018621182516](http://panrhkqz9.bkt.clouddn.com/2018621182516.png)
+![2018621182516](http://note.itdeer.cn/2018621182516.png)
 
  - 接着返回去一步一步的确定
 
  - 使用组合键win + R 然后输入cmd 打开Docs窗口
 
- ![2018621182710](http://panrhkqz9.bkt.clouddn.com/2018621182710.png)
+ ![2018621182710](http://note.itdeer.cn/2018621182710.png)
 
  - 使用mvn -v 命令验证
 
- ![2018621182825](http://panrhkqz9.bkt.clouddn.com/2018621182825.png)
+ ![2018621182825](http://note.itdeer.cn/2018621182825.png)
 
 > Maven安装成功，接下来可以使用Maven管理自己的项目了。

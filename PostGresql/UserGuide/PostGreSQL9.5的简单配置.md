@@ -65,7 +65,7 @@ bash-4.2$ vim /home/postgresql_data/postgresql.conf
 改为 password_encryption = on
 ```
 
-![2018621141830](http://panrhkqz9.bkt.clouddn.com/2018621141830.png)
+![2018621141830](http://note.itdeer.cn/2018621141830.png)
 
 ```
 bash-4.2$ vim /home/postgresql_data/pg_hba.conf
@@ -76,7 +76,7 @@ bash-4.2$ vim /home/postgresql_data/pg_hba.conf
 在最下面添加 host    all             all             0.0.0.0/0                md5
 ```
 
-![2018621141854](http://panrhkqz9.bkt.clouddn.com/2018621141854.png)
+![2018621141854](http://note.itdeer.cn/2018621141854.png)
 
 [6] 重启服务
 

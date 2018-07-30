@@ -60,7 +60,7 @@ nginx   17947 nginx    6u  IPv4  41378      0t0  TCP *:http (LISTEN)
 
 ### 整体架构
 
-![201862114954](http://panrhkqz9.bkt.clouddn.com/201862114954.png)
+![201862114954](http://note.itdeer.cn/201862114954.png)
 
 ### 准备三个Tomcat的Web服务器
 
@@ -234,7 +234,7 @@ rm -fr /opt/install/tomcat3/webapps/*
 
 ```
 
-![2018621141025](http://panrhkqz9.bkt.clouddn.com/2018621141025.png)
+![2018621141025](http://note.itdeer.cn/2018621141025.png)
 
 ### 修改Nginx
 
@@ -367,7 +367,7 @@ http://www.demotest3.com/
 ```
 
 出现:
-![2018621141054](http://panrhkqz9.bkt.clouddn.com/2018621141054.png)
+![2018621141054](http://note.itdeer.cn/2018621141054.png)
 
 > 原因
 
@@ -414,7 +414,7 @@ SELINUX=disabled
 
 > 结果
 
-![2018621141113](http://panrhkqz9.bkt.clouddn.com/2018621141113.png)
+![2018621141113](http://note.itdeer.cn/2018621141113.png)
 
 > 本案例讲解的是使用同一台服务器，模拟一个Nginx代理三个tomcat的应用，通过上面顺序步骤的配置，即可实现此功能
 之后还会有一个Nginx代理一个Tomcat的多个应用及一个应用的负载配置，敬请关注

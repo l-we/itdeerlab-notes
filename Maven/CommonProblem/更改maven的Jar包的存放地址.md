@@ -11,7 +11,7 @@
 
 > 进入conf目录下，修改settings.xml文件
 
-![201862122424](http://panrhkqz9.bkt.clouddn.com/201862122424.png)
+![201862122424](http://note.itdeer.cn/201862122424.png)
 
 > 添加完成保存即可，之后下载的Jar文件会分门别类的存放到 D:\Maven\working 目录下。方便自己查找
 
@@ -28,7 +28,7 @@
 
 > 修改conf/setting.xml文件
 
-![201862122437](http://panrhkqz9.bkt.clouddn.com/201862122437.png)
+![201862122437](http://note.itdeer.cn/201862122437.png)
 
 ```
 [root@itdeer maven]# cd conf/

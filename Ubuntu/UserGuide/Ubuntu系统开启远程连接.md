@@ -17,7 +17,7 @@ sudo apt-get install openssh-server -y
 
 > 很多时候会遇到一些问题 如：
 
-![2018621141331](http://panrhkqz9.bkt.clouddn.com/2018621141331.png)
+![2018621141331](http://note.itdeer.cn/2018621141331.png)
 
 > 解决方式：
 

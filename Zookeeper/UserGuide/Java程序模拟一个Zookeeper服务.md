@@ -24,7 +24,7 @@
 
 [3] 创建包及启动类
 
-![2018621235229](http://panrhkqz9.bkt.clouddn.com/2018621235229.png)
+![2018621235229](http://note.itdeer.cn/2018621235229.png)
 
 ```
 package cn.itdeer.zookeeper;
@@ -132,6 +132,6 @@ public class StartZookeeper {
 
 [5] 检测端口
 
-![20186220329](http://panrhkqz9.bkt.clouddn.com/20186220329.png)
+![20186220329](http://note.itdeer.cn/20186220329.png)
 
 > 说明Zookeeper服务已经启动了，并且监听在2181端口上，可以使用了。

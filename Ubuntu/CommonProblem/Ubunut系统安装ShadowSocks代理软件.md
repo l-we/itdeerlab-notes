@@ -82,13 +82,13 @@ chromium-browser --proxy-server=socks5://127.0.0.1:1080
 ```
 首先在Chrome网上应用店 --> SwitchySharp 搜索 --> + 添加至CHROME
 ```
-![2018621141238](http://panrhkqz9.bkt.clouddn.com/2018621141238.png)
+![2018621141238](http://note.itdeer.cn/2018621141238.png)
 
 ```
 安装完成之后进行以下配置
 ```
 
-![201862114131](http://panrhkqz9.bkt.clouddn.com/201862114131.png)
+![201862114131](http://note.itdeer.cn/201862114131.png)
 
 # 5、设置开机启动
 

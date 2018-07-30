@@ -11,7 +11,7 @@
 
 > 下载页面地址: http://download.geofabrik.de/asia.html
 
-![201862114292](http://panrhkqz9.bkt.clouddn.com/201862114292.png)
+![201862114292](http://note.itdeer.cn/201862114292.png)
 
 ```
 [root@demo ~]# wget http://download.geofabrik.de/asia/china-latest.osm.pbf
@@ -27,9 +27,9 @@ Saving to: ‘china-latest.osm.pbf’
 
 > 下载页面地址: http://openstreetmapdata.com/data/water-polygons
 
-![2018621142924](http://panrhkqz9.bkt.clouddn.com/2018621142924.png)
+![2018621142924](http://note.itdeer.cn/2018621142924.png)
 
-![2018621142940](http://panrhkqz9.bkt.clouddn.com/2018621142940.png)
+![2018621142940](http://note.itdeer.cn/2018621142940.png)
 
 ```
 [root@demo ~]# wget http://data.openstreetmapdata.com/water-polygons-split-3857.zip

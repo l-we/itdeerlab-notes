@@ -42,7 +42,7 @@ Linux itdeer 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x8
 
  - 找到下载页面
 
- ![201862118121](http://panrhkqz9.bkt.clouddn.com/201862118121.png)
+ ![201862118121](http://note.itdeer.cn/201862118121.png)
 
 ```
 [root@itdeer ~]# cd /opt/

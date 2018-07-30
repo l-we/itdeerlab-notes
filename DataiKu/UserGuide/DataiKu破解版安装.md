@@ -429,9 +429,9 @@ Waiting for DSS backend to start ....
 
 ### 访问界面
 
-![2018621134118](http://panrhkqz9.bkt.clouddn.com/2018621134118.png)
+![2018621134118](http://note.itdeer.cn/2018621134118.png)
 
-![2018621134150](http://panrhkqz9.bkt.clouddn.com/2018621134150.png)
+![2018621134150](http://note.itdeer.cn/2018621134150.png)
 
 > 安装完成，可以在界面进行数据分析挖掘
 

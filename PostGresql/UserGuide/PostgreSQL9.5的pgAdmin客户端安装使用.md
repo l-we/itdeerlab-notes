@@ -6,9 +6,9 @@
 
 > pgAdmin当前最新版本是pgAdmin 4 V3.0版本[下载页面](https://www.pgadmin.org/download/pgadmin-4-windows/)
 
-![2018621143025](http://panrhkqz9.bkt.clouddn.com/2018621143025.png)
+![2018621143025](http://note.itdeer.cn/2018621143025.png)
 
-![2018621143042](http://panrhkqz9.bkt.clouddn.com/2018621143042.png)
+![2018621143042](http://note.itdeer.cn/2018621143042.png)
 
 ### 软件安装
 
@@ -60,7 +60,7 @@
      - 点击【Save】
 4. 显示界面
 
-![201862114312](http://panrhkqz9.bkt.clouddn.com/201862114312.png)
+![201862114312](http://note.itdeer.cn/201862114312.png)
 
 
 5. 要退出的话,在桌面的下方任务栏中找到象鼻图标,右键, 点击 [Shutdown server] 之后点击[Yes]按钮.

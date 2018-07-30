@@ -30,7 +30,7 @@ Linux master 3.10.0-327.el7.x86_64 #1 SMP Thu Nov 19 22:10:57 UTC 2015 x86_64 x8
 
 > 由于资源的问题，我的集群只启动了Zookeeper和Kafka两个组件
 
-![2018621135135](http://panrhkqz9.bkt.clouddn.com/2018621135135.png)
+![2018621135135](http://note.itdeer.cn/2018621135135.png)
 ### Kafka-Manager测试
 
 [1] 把源码编译的包上传至集群服务器
@@ -89,6 +89,6 @@ pinned-dispatcher.type="PinnedDispatcher"
 
  - 在浏览器输入你部署Kafka-Manager的机器IP:9500访问
 
-![2018621135241](http://panrhkqz9.bkt.clouddn.com/2018621135241.png)
+![2018621135241](http://note.itdeer.cn/2018621135241.png)
 
 > 由此能看到前端能正常访问说明Kafka-Manager已经能正常启动起来了。下一节介绍Kafka-Manager的简单使用。

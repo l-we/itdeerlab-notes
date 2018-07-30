@@ -20,15 +20,15 @@
 
 [1] 打开插件商店
 
-![2018621224537](http://panrhkqz9.bkt.clouddn.com/2018621224537.png)
+![2018621224537](http://note.itdeer.cn/2018621224537.png)
 
 [2] 安装七牛云平台与VisualStudioCode的插件（插件名称：paste image to qiniu）
 
-![2018621224410](http://panrhkqz9.bkt.clouddn.com/2018621224410.png)
+![2018621224410](http://note.itdeer.cn/2018621224410.png)
 
 [3] 安装方便的快捷键用于编辑Markdown（.md，.markdown）文件的插件（插件名称：Markdown Shortcuts）
 
-![2018621224758](http://panrhkqz9.bkt.clouddn.com/2018621224758.png)
+![2018621224758](http://note.itdeer.cn/2018621224758.png)
 
 > 安装完成之后需要重新加载，或者关闭之后再打开即可
 
@@ -38,21 +38,21 @@
 
  - 百度进行搜索
 
-![201862122588](http://panrhkqz9.bkt.clouddn.com/201862122588.png)
+![201862122588](http://note.itdeer.cn/201862122588.png)
 
-![2018621225853](http://panrhkqz9.bkt.clouddn.com/2018621225853.png)
+![2018621225853](http://note.itdeer.cn/2018621225853.png)
 
-![2018621225948](http://panrhkqz9.bkt.clouddn.com/2018621225948.png)
+![2018621225948](http://note.itdeer.cn/2018621225948.png)
 
-![201862123011](http://panrhkqz9.bkt.clouddn.com/201862123011.png)
+![201862123011](http://note.itdeer.cn/201862123011.png)
 
  - 根据自己的邮箱进行验证
 
-![201862123128](http://panrhkqz9.bkt.clouddn.com/201862123128.png)
+![201862123128](http://note.itdeer.cn/201862123128.png)
 
 [2] 实名认证
 
-![201862123157](http://panrhkqz9.bkt.clouddn.com/201862123157.png)
+![201862123157](http://note.itdeer.cn/201862123157.png)
 
  - 系统会提示你认证，这里我已经进行过认证了，所以截图是没有办法截了，下面直接口述吧。
 
@@ -64,13 +64,13 @@
 
 [4] 创建存储空间
 
-![201862123719](http://panrhkqz9.bkt.clouddn.com/201862123719.png)
+![201862123719](http://note.itdeer.cn/201862123719.png)
 
-![201862123753](http://panrhkqz9.bkt.clouddn.com/201862123753.png)
+![201862123753](http://note.itdeer.cn/201862123753.png)
 
-![2018621231050](http://panrhkqz9.bkt.clouddn.com/2018621231050.png)
+![2018621231050](http://note.itdeer.cn/2018621231050.png)
 
-![2018621231137](http://panrhkqz9.bkt.clouddn.com/2018621231137.png)
+![2018621231137](http://note.itdeer.cn/2018621231137.png)
 
 > 为外链的地址，当然也可以使用自己的域名，这个就自己去捯饬吧，我就不详细说了，因为七牛云的文档是相当的完善了。
 
@@ -78,15 +78,15 @@
 
 [1] 打开配置文件
 
-![201862122521](http://panrhkqz9.bkt.clouddn.com/201862122521.png)
+![201862122521](http://note.itdeer.cn/201862122521.png)
 
 [2] 查询有关qiniu 的配置项
 
-![201862122539](http://panrhkqz9.bkt.clouddn.com/201862122539.png)
+![201862122539](http://note.itdeer.cn/201862122539.png)
 
 [3] 复制配置
 
-![2018621225348](http://panrhkqz9.bkt.clouddn.com/2018621225348.png)
+![2018621225348](http://note.itdeer.cn/2018621225348.png)
 
 [4] 更改配置信息
 

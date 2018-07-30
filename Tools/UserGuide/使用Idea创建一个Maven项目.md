@@ -12,27 +12,27 @@
 
  - 点击创建一个新的项目
 
-![201862123281](http://panrhkqz9.bkt.clouddn.com/201862123281.png)
+![201862123281](http://note.itdeer.cn/201862123281.png)
 
  - 选择一个Maven项目
 
-![2018621232844](http://panrhkqz9.bkt.clouddn.com/2018621232844.png)
+![2018621232844](http://note.itdeer.cn/2018621232844.png)
 
  - 填写GroupId ArtifactId Version信息
 
-![2018621232923](http://panrhkqz9.bkt.clouddn.com/2018621232923.png)
+![2018621232923](http://note.itdeer.cn/2018621232923.png)
 
  - 项目名称及存储路径
 
-![2018621232946](http://panrhkqz9.bkt.clouddn.com/2018621232946.png)
+![2018621232946](http://note.itdeer.cn/2018621232946.png)
 
  - 项目的结构及点击选择自动导入Maven变化
 
-![2018621233112](http://panrhkqz9.bkt.clouddn.com/2018621233112.png)
+![2018621233112](http://note.itdeer.cn/2018621233112.png)
 
 - 主要的操作就在这个pom.xml文件中
 
-![2018621233221](http://panrhkqz9.bkt.clouddn.com/2018621233221.png)
+![2018621233221](http://note.itdeer.cn/2018621233221.png)
 
 > 添加阿里的maven仓库加速
 

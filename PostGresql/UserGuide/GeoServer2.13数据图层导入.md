@@ -83,27 +83,27 @@ CREATE INDEX
 
 > 点击 [工作区] --> [添加新的工作区] --> [Name]填值 --> [命名空间URI]填值 --> 勾选[默认工作区] --> 提交
 
-![2018621142043](http://panrhkqz9.bkt.clouddn.com/2018621142043.png)
+![2018621142043](http://note.itdeer.cn/2018621142043.png)
 
-![201862114219](http://panrhkqz9.bkt.clouddn.com/201862114219.png)
+![201862114219](http://note.itdeer.cn/201862114219.png)
 
 > 点击[工作区名称] chinaosm 点击进去 --> 勾选[服务] 下所有的服务 --> 启用按钮
 
-![2018621142128](http://panrhkqz9.bkt.clouddn.com/2018621142128.png)
+![2018621142128](http://note.itdeer.cn/2018621142128.png)
 
-![2018621142145](http://panrhkqz9.bkt.clouddn.com/2018621142145.png)
+![2018621142145](http://note.itdeer.cn/2018621142145.png)
 
 [2] 新建矢量数据源
 
 > 点击 [数据存储] --> [添加新的数据存储] --> 点击[s矢量数据源] -->点击 [PostGis] -->填写 存储的基本信息
 
-![201862114226](http://panrhkqz9.bkt.clouddn.com/201862114226.png)
+![201862114226](http://note.itdeer.cn/201862114226.png)
 
-![2018621142227](http://panrhkqz9.bkt.clouddn.com/2018621142227.png)
+![2018621142227](http://note.itdeer.cn/2018621142227.png)
 
 > 工作区 - 数据源名称 - 说明 - 连接参数 - host - port - database - scheam - user - passwd 
 
-![2018621142257](http://panrhkqz9.bkt.clouddn.com/2018621142257.png)
+![2018621142257](http://note.itdeer.cn/2018621142257.png)
 
 [3] 创建样式和图表
 
@@ -169,7 +169,7 @@ done
 #  http://apps.opengeo.org/geoserver/rest/workspaces/osm/layergroups
 ```
 
-![2018621142357](http://panrhkqz9.bkt.clouddn.com/2018621142357.png)
+![2018621142357](http://note.itdeer.cn/2018621142357.png)
 
 > 执行脚本
 
@@ -203,9 +203,9 @@ done
 
 [4] 查看图层及样式
 
-![2018621142425](http://panrhkqz9.bkt.clouddn.com/2018621142425.png)
+![2018621142425](http://note.itdeer.cn/2018621142425.png)
 
-![2018621142440](http://panrhkqz9.bkt.clouddn.com/2018621142440.png)
+![2018621142440](http://note.itdeer.cn/2018621142440.png)
 
 
 [5] 创建图层组
@@ -278,11 +278,11 @@ done
 
 > 查看图层组
 
-![2018621142542](http://panrhkqz9.bkt.clouddn.com/2018621142542.png)
+![2018621142542](http://note.itdeer.cn/2018621142542.png)
 
-![2018621142559](http://panrhkqz9.bkt.clouddn.com/2018621142559.png)
+![2018621142559](http://note.itdeer.cn/2018621142559.png)
 
-![2018621142616](http://panrhkqz9.bkt.clouddn.com/2018621142616.png)
+![2018621142616](http://note.itdeer.cn/2018621142616.png)
 
 
 [6] 添加中文字体
@@ -291,19 +291,19 @@ done
 
  - 查看字体情况
 
-![2018621142643](http://panrhkqz9.bkt.clouddn.com/2018621142643.png)
+![2018621142643](http://note.itdeer.cn/2018621142643.png)
 
-![201862114273](http://panrhkqz9.bkt.clouddn.com/201862114273.png)
+![201862114273](http://note.itdeer.cn/201862114273.png)
 
 [7] 设置样式
 
 > 更改样式中的[DejaVu Sans] 替换成 [Microsoft YaHei] 然后点击[Validate] 之后点击[Apply] 之后 [提交]
 
-![2018621142726](http://panrhkqz9.bkt.clouddn.com/2018621142726.png)
+![2018621142726](http://note.itdeer.cn/2018621142726.png)
 
-![2018621142744](http://panrhkqz9.bkt.clouddn.com/2018621142744.png)
+![2018621142744](http://note.itdeer.cn/2018621142744.png)
 
-![201862114283](http://panrhkqz9.bkt.clouddn.com/201862114283.png)
+![201862114283](http://note.itdeer.cn/201862114283.png)
 
 
 [8] 最终结果

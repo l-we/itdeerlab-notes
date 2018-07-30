@@ -132,7 +132,7 @@ drwx------. 2 postgres postgres 6 Apr 25 23:50 postgresql_data
 注意：有的时候直接复制过去会出问题，在向文件中写的字符建议自己敲，因为编码格式等原因会不对。
 ```
 
-![2018621141627](http://panrhkqz9.bkt.clouddn.com/2018621141627.png)
+![2018621141627](http://note.itdeer.cn/2018621141627.png)
 
  - 初始化数据库
 

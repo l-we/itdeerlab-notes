@@ -88,6 +88,6 @@ java    10718 root   45u  IPv6  30491      0t0  TCP *:webcache (LISTEN)
 浏览器地址栏中输入：http://IP:8080
 ```
 
-![2018621141411](http://panrhkqz9.bkt.clouddn.com/2018621141411.png)
+![2018621141411](http://note.itdeer.cn/2018621141411.png)
 
 > 在页面看到三条腿的猫则配置完成，这样就可以部署一些JavaWeb的应用，建立自己的站点
